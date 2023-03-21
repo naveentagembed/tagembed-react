@@ -1,0 +1,196 @@
+.themeStart50 .postCardContent, .themeStart50 .postCardContent .postedText, .themeStart50 .postCardContent ._innerDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.themeStart50 .postCardContent, .themeStart50 .postCardContent .postedText, .themeStart50 .postCardContent ._innerDiv, .themeStart50 .postAuthorClassic .authorInfo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeStart50 .postCardContent, .themeStart50 .postCardContent .postedText, .themeStart50 .postCardContent ._innerDiv {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.themeStart50 .postCardContent, .themeStart50 .postCardContent .postedText, .themeStart50 .postCardContent ._innerDiv, .themeStart50 .postAuthorClassic .authorInfo {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.themeStart50 .postCardContent, .themeStart50 .image_overlay_black {
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out; }
+
+.themeStart50 .postCardContent {
+  width: -webkit-fill-available;
+  width: stretch;
+  width: -moz-available; }
+
+.themeStart50 .postAuthorClassic .authorInfo, .themeStart50 .postAuthorClassic .authorInfo .authrHandleTime {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.themeStart50 .postNetwork i {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.42); }
+
+.themeStart50 {
+  /**/
+  /* Hashtag highlighter trimcontent css start */ }
+  .themeStart50 .flatThemeCard {
+    height: 300px; }
+  .themeStart50 .post, .themeStart50 .post .image, .themeStart50 .postContent {
+    height: 100%;
+    border: 0; }
+  .themeStart50 .post .postContent .image div.multipostIcon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: auto; }
+    .themeStart50 .post .postContent .image div.multipostIcon img {
+      height: 20px;
+      width: 20px;
+      max-height: 20px;
+      min-height: 20px;
+      border-radius: 0; }
+  .themeStart50 .postCardContent {
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .themeStart50 .postCardContent .postedText {
+      color: #fff;
+      text-align: center;
+      padding: 5px 18px 0 18px;
+      margin: 0; }
+      .themeStart50 .postCardContent .postedText h1, .themeStart50 .postCardContent .postedText p {
+        line-height: 112%;
+        padding-top: 2px;
+        margin-top: 0;
+        color: inherit; }
+    .themeStart50 .postCardContent ._innerDiv {
+      width: 100%;
+      height: 100%; }
+  .themeStart50 .post:hover .postCardContent {
+    opacity: 1;
+    height: calc(100% - 64px) !important; }
+  .themeStart50 .post:hover .image_overlay_black {
+    opacity: 0; }
+  .themeStart50 .image_overlay_black {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.79)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0)); }
+  .themeStart50 .postNetwork {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 99999;
+    line-height: 0; }
+    .themeStart50 .postNetwork i {
+      font-size: 24px;
+      color: #fff !important; }
+  .themeStart50 .postAuthorClassic {
+    position: relative;
+    padding: 14.4px; }
+    .themeStart50 .postAuthorClassic .authorInfo .postAuthorName {
+      font-size: 14px;
+      margin-top: 8px; }
+    .themeStart50 .postAuthorClassic .authorInfo .authrHandle, .themeStart50 .postAuthorClassic .authorInfo .timePost {
+      font-size: 12px; }
+    .themeStart50 .postAuthorClassic .authorInfo img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+      -webkit-box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+      -moz-box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+      border: 2px solid #fff;
+      background-color: #fff; }
+    .themeStart50 .postAuthorClassic .authorInfo .postNetwork {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 22px; }
+  .themeStart50 .postAuthorClassic {
+    padding-top: 0; }
+  .themeStart50 pre.chtrLimits.emojiApplied {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart50 p.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart50 p.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart50 p.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart50 p.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis; }
+  .themeStart50 pre.gallery_text_trim.chtrLimits.emojiApplied {
+    background-color: transparent;
+    padding: 0; }
+  .themeStart50 pre.gallery_text_trim.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart50 pre.gallery_text_trim.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart50 pre.gallery_text_trim.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart50 pre.gallery_text_trim.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis; }
+
+/*# sourceMappingURL=gallery.css.map */

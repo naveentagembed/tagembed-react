@@ -1,0 +1,134 @@
+.themeStart3 .socialPostAction .popover-content .popover-content-inner a, .themeStart3 .socialPostAction a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.themeStart3 .socialPostAction .popover-content .popover-content-inner a, .themeStart3 .socialPostAction a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeStart3 .socialPostAction {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+.themeStart3 .socialPostAction {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.themeStart3 .socialPostAction .popover-content .popover-content-inner a {
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s; }
+
+.themeStart3 .post {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  /**/ }
+
+.themeStart3 .post {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+
+.themeStart3 {
+  /*--Highlighter-Post--*/ }
+  .themeStart3 .post {
+    border-radius: 0;
+    border: 0;
+    height: 100%;
+    margin: 0; }
+  .themeStart3 .cardPostCTA {
+    margin-top: 0;
+    padding: 9.6px; }
+  .themeStart3 .postAuthor .postNetwork {
+    top: 14px; }
+  .themeStart3 .post .postContent .image div.multipostIcon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: auto; }
+    .themeStart3 .post .postContent .image div.multipostIcon img {
+      height: 20px;
+      width: 20px;
+      max-height: 20px;
+      min-height: 20px;
+      border-radius: 0; }
+  .themeStart3 .postContent {
+    /**/
+    height: 100%; }
+  .themeStart3 .postContent .image {
+    height: 260px;
+    /**/
+    height: calc(100% - 72px); }
+  .themeStart3 .youtubeTagembedta .postContent .image {
+    height: 162px; }
+  .themeStart3 .socialPostAction {
+    padding: 10px 0;
+    border-top: 1px solid #e0f0f1; }
+    .themeStart3 .socialPostAction .social-shareWrapper {
+      position: relative; }
+    .themeStart3 .socialPostAction .popover-content {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      padding: 0;
+      padding-bottom: 10px;
+      width: 170px;
+      right: -1px;
+      z-index: 6; }
+      .themeStart3 .socialPostAction .popover-content .popover-content-inner {
+        position: relative;
+        background: #efefef;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+        .themeStart3 .socialPostAction .popover-content .popover-content-inner:before {
+          content: "";
+          background: #fff;
+          position: absolute;
+          bottom: -5px;
+          right: 20px;
+          width: 10px;
+          height: 10px;
+          -webkit-transform: rotateZ(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotateZ(-45deg); }
+        .themeStart3 .socialPostAction .popover-content .popover-content-inner a {
+          color: #fff;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 1;
+          border-top: 1px solid #e7e7e7;
+          padding: 12px;
+          cursor: pointer;
+          position: relative;
+          text-align: left; }
+          .themeStart3 .socialPostAction .popover-content .popover-content-inner a:first-child {
+            border-top: 0; }
+          .themeStart3 .socialPostAction .popover-content .popover-content-inner a:hover {
+            background: #efefef; }
+          .themeStart3 .socialPostAction .popover-content .popover-content-inner a i {
+            margin-right: 7px; }
+      .themeStart3 .socialPostAction .popover-content.onlyShare {
+        left: calc(50% - 110px); }
+        .themeStart3 .socialPostAction .popover-content.onlyShare .popover-content-inner:before {
+          right: calc(50% - 30px); }
+    .themeStart3 .socialPostAction a {
+      width: auto;
+      padding: 0 5px;
+      font-size: 16px;
+      line-height: 16px; }
+      .themeStart3 .socialPostAction a svg {
+        margin-right: 5px;
+        width: 15px;
+        height: auto; }
+      .themeStart3 .socialPostAction a:hover svg path {
+        stroke: #00e9ff; }
+      .themeStart3 .socialPostAction a:hover {
+        color: #00e9ff; }
+  .themeStart3 .polaroid.theme3 .postContent > div.image {
+    height: calc(100% - 72px); }
+
+/*# sourceMappingURL=polaroid.css.map */

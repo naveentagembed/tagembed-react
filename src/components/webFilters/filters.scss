@@ -1,0 +1,639 @@
+@import "../../scss/variables.scss";
+/* .filterWrapper { } */
+.filterWrapper {
+  @extend %d-flex;
+  @extend %jc-center;
+  margin-top: $p24 !important;
+  margin-bottom: $p24 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  & .ff-filter {
+    margin: $p2;
+    display: $dinlineblock;
+    cursor: $pointer;
+    vertical-align: middle;
+    & a {
+      padding: $h10 $p0;
+      display: $dinlineblock;
+      width: $p48;
+      height: $p48;
+      border: $bordertype3 $transparent;
+      border-radius: $p4;
+      font-size: $p18;
+      text-align: $center;
+
+      &:hover {
+        box-shadow: 0 2px 1px rgba(0, 233, 255, 0.5);
+        color: $white;
+        opacity: $lh1;
+      }
+    }
+
+    & a {
+      background-color: $white;
+    }
+  }
+
+  & .poweredbyWithFilters {
+    margin: $p2;
+
+    & a {
+      border-radius: $p4;
+      height: $p48;
+      padding: $h10;
+      display: $dinlineblock;
+    }
+
+    & img {
+      margin-left: $p8 !important;
+    }
+  }
+}
+
+/* FILTER 1 */
+.filter1 {
+  .poweredbyWithFilters {
+    & a {
+      width: $p48;
+      border-radius: $sizehalf;
+      padding: $h10;
+    }
+
+    .poweredby {
+      & span {
+        display: $none;
+      }
+
+      & img {
+        margin: $p0 !important;
+      }
+    }
+  }
+
+  & .ff-filter a {
+    border-radius: $sizehalf;
+  }
+}
+
+/* FILTER 3,4 */
+.filter4.filterWrapper .poweredbyWithFilters a {
+  height: $p36;
+  padding: $p4 $h10;
+}
+
+.filter4 .ff-filter a {
+  width: $auto;
+  padding: 4.8px 12.8px;
+  font-size: $p16;
+  height: $p36;
+}
+
+.filter4 .ff-filter a i {
+  margin-right: $h5;
+}
+
+.filter3 .ff-filter a {
+  border-radius: $p0;
+}
+
+.filter3 a[data-network="0"],
+.filter4 a[data-network="0"] {
+  color: $primary;
+  border-color: $primary !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+    border-color: $primary;
+  }
+
+  &.filterActive {
+    background: $primary;
+    color: $white;
+    border-color: $primary;
+  }
+}
+
+.filter3 a[data-network="1"],
+.filter4 a[data-network="1"] {
+  color: $twshare;
+  border-color: $twshare !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $twshare;
+    color: $white;
+    border-color: $twshare;
+  }
+
+  &.filterActive {
+    background: $twshare;
+    color: $white;
+    border-color: $twshare;
+  }
+}
+
+.filter3 a[data-network="2"],
+.filter4 a[data-network="2"] {
+  color: $inshare;
+  border-color: $inshare !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $inshare;
+    color: $white;
+    border-color: $inshare;
+  }
+
+  &.filterActive {
+    background: $inshare;
+    color: $white;
+    border-color: $inshare;
+  }
+}
+
+.filter3 a[data-network="3"],
+.filter4 a[data-network="3"] {
+  color: $fbshare;
+  border-color: $fbshare !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $fbshare;
+    color: $white;
+    border-color: $fbshare;
+  }
+
+  &.filterActive {
+    background: $fbshare;
+    color: $white;
+    border-color: $fbshare;
+  }
+}
+
+.filter3 a[data-network="4"],
+.filter4 a[data-network="4"] {
+  color: $google;
+  border-color: $google !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $google;
+    color: $white;
+    border-color: $google;
+  }
+
+  &.filterActive {
+    background: $google;
+    color: $white;
+    border-color: $google;
+  }
+}
+
+.filter3 a[data-network="5"],
+.filter4 a[data-network="5"] {
+  color: $pinterest;
+  border-color: $pinterest !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $pinterest;
+    color: $white;
+    border-color: $pinterest;
+  }
+
+  &.filterActive {
+    background: $pinterest;
+    color: $white;
+    border-color: $pinterest;
+  }
+}
+
+.filter3 a[data-network="6"],
+.filter4 a[data-network="6"] {
+  color: $flicker;
+  border-color: $flicker !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $flicker;
+    color: $white;
+    border-color: $flicker;
+  }
+
+  &.filterActive {
+    background: $flicker;
+    color: $white;
+    border-color: $flicker;
+  }
+}
+
+.filter3 a[data-network="7"],
+.filter4 a[data-network="7"] {
+  color: $youtube;
+  border-color: $youtube !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $youtube;
+    color: $white;
+    border-color: $youtube;
+  }
+
+  &.filterActive {
+    background: $youtube;
+    color: $white;
+    border-color: $youtube;
+  }
+}
+
+.filter3 a[data-network="8"],
+.filter4 a[data-network="8"] {
+  color: $vimeo;
+  border-color: $vimeo !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $vimeo;
+    color: $white;
+    border-color: $vimeo;
+  }
+
+  &.filterActive {
+    background: $vimeo;
+    color: $white;
+    border-color: $vimeo;
+  }
+}
+
+.filter3 a[data-network="10"],
+.filter4 a[data-network="10"] {
+  color: $linkedin;
+  border-color: $linkedin !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $linkedin;
+    color: $white;
+    border-color: $linkedin;
+  }
+
+  &.filterActive {
+    background: $linkedin;
+    color: $white;
+    border-color: $linkedin;
+  }
+}
+
+.filter3 a[data-network="11"],
+.filter4 a[data-network="11"] {
+  color: $tumblr;
+  border-color: $tumblr !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $tumblr;
+    color: $white;
+    border-color: $tumblr;
+  }
+
+  &.filterActive {
+    background: $tumblr;
+    color: $white;
+    border-color: $tumblr;
+  }
+}
+
+.filter3 a[data-network="12"],
+.filter4 a[data-network="12"] {
+  color: $rss;
+  border-color: $rss !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $rss;
+    color: $white;
+    border-color: $rss;
+  }
+
+  &.filterActive {
+    background: $rss;
+    color: $white;
+    border-color: $rss;
+  }
+}
+
+.filter3 a[data-network="15"],
+.filter4 a[data-network="15"] {
+  color: $workplace;
+  border-color: $workplace !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $workplace;
+    color: $white;
+    border-color: $workplace;
+  }
+
+  &.filterActive {
+    background: $workplace;
+    color: $white;
+    border-color: $workplace;
+  }
+}
+
+.filter3 a[data-network="18"],
+.filter4 a[data-network="18"] {
+  color: $instabusiness;
+  border-color: $instabusiness !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $instabusiness;
+    color: $white;
+    border-color: $instabusiness;
+  }
+
+  &.filterActive {
+    background: $instabusiness;
+    color: $white;
+    border-color: $instabusiness;
+  }
+}
+
+.filter3 a[data-network="19"],
+.filter4 a[data-network="19"] {
+  color: $yelp;
+  border-color: $yelp !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $yelp;
+    color: $white;
+    border-color: $yelp;
+  }
+
+  &.filterActive {
+    background: $yelp;
+    color: $white;
+    border-color: $yelp;
+  }
+}
+
+.filter3 a[data-network="20"],
+.filter4 a[data-network="20"] {
+  color: $slack;
+  border-color: $slack !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $slack;
+    color: $white;
+    border-color: $slack;
+  }
+
+  &.filterActive {
+    background: $slack;
+    color: $white !important;
+    border-color: $slack;
+  }
+}
+
+.filter3 a[data-network="21"],
+.filter4 a[data-network="21"] {
+  color: $yammer;
+  border-color: $yammer !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $yammer;
+    color: $white;
+    border-color: $yammer;
+  }
+
+  &.filterActive {
+    background: $yammer;
+    color: $white;
+    border-color: $yammer;
+  }
+}
+
+.filter3 a[data-network="23"],
+.filter4 a[data-network="23"] {
+  color: $airbnb;
+  border-color: $airbnb !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $airbnb;
+    color: $white;
+    border-color: $airbnb;
+  }
+
+  &.filterActive {
+    background: $airbnb;
+    color: $white;
+    border-color: $airbnb;
+  }
+}
+
+.filter3 a[data-network="25"],
+.filter4 a[data-network="25"] {
+  color: $soundcloud;
+  border-color: $soundcloud !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $soundcloud;
+    color: $white;
+    border-color: $soundcloud;
+  }
+
+  &.filterActive {
+    background: $soundcloud;
+    color: $white;
+    border-color: $soundcloud;
+  }
+}
+.filter3 a[data-network="32"],
+.filter4 a[data-network="32"] {
+  color: $vk;
+  border-color: $vk !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $vk;
+    color: $white;
+    border-color: $vk;
+  }
+
+  &.filterActive {
+    background: $vk;
+    color: $white;
+    border-color: $vk;
+  }
+}
+
+
+.filter3 a[data-network="26"],
+.filter4 a[data-network="26"] {
+  color: $giphy;
+  border-color: $giphy !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $giphy;
+    color: $white;
+    border-color: $giphy;
+  }
+
+  &.filterActive {
+    background: $giphy;
+    color: $white;
+    border-color: $giphy;
+  }
+}
+
+.filter3 a[data-network="28"],
+.filter4 a[data-network="28"] {
+  color: $capetrra;
+  border-color: $capetrra !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $capetrra;
+    color: $white;
+    border-color: $capetrra;
+  }
+
+  &.filterActive {
+    background: $capetrra;
+    color: $white;
+    border-color: $capetrra;
+  }
+}
+
+.galleryFilter50Active {
+  color: $black !important;
+  background: $white !important;
+  border: $bordertype3 $black !important;
+}
+
+.galleryFilter50 {
+  color: $white !important;
+  background: $black !important;
+  border: $bordertype3 $black !important;
+}
+
+/* JS CODE CHANGES */
+.tagembed-socialwall i.fa,.tagembed-socialwall i.fab {
+  color: $inherit;
+}
+
+.filter3 .ff-filter a:hover i,
+.filter4 .ff-filter a:hover {
+  color: $white !important;
+  /* added due to client issue*/
+  cursor: pointer;
+}
+
+// .filter3 .ff-filter a:hover i.fa-tiktok::before,
+// .filter4 .ff-filter a:hover i.fa-tiktok::before {
+//   @extend %invert1;
+// }
+
+.filter4 .ff-filter a i.fa.fa-tiktok {
+  vertical-align: $valignmiddle;
+}
+
+.filter3 a[data-network="31"],
+.filter4 a[data-network="31"] {
+  border-color: $black !important;
+  @extend %trans2s;
+}
+
+.filter3 a[data-network="31"]:hover,
+.filter3 a[data-network="31"].filterActive,
+.filter4 a[data-network="31"]:hover,
+.filter4 a[data-network="31"].filterActive {
+  background: $black;
+  color: $white;
+}
+
+// .filter1 .ff-filter a[data-network="31"]:hover i::before,
+// .filter2 .ff-filter a[data-network="31"]:hover i::before {
+//   background-image: url(https://cdn.tagembed.com/app/img/social-icons/31-blue.svg);
+// }
+
+/* JS CODE CHANGES */
+.tagembed-socialwall i.fab.fa-slack {
+  color: $inherit;
+}
+
+
+.filter2 .ff-filter a[data-network="31"]:hover i:before {
+  filter: none;
+}
+
+// for trustpilot
+.fa.fa-trustpilot:before {
+  background: url(https://cdn.tagembed.com/common/images/feeds/76.png);
+  width: 26px;
+  height: 26px;
+  display: block;
+  content: "";
+}
+
+.filter3 a[data-network="33"],
+.filter4 a[data-network="33"] {
+  color: $trustpilot;
+  border-color: $trustpilot !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $trustpilot;
+    color: $white;
+    border-color: $trustpilot;
+  }
+
+  &.filterActive {
+    background: $trustpilot;
+    color: $white;
+    border-color: $trustpilot;
+  }
+}
+
+.filter4 .ff-filter a i.fa-trustpilot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+// for Etsy
+.filter3 a[data-network="29"],
+.filter4 a[data-network="29"] {
+  color: $etsy;
+  border-color: $etsy !important;
+  @extend %trans2s;
+
+  &:hover {
+    background: $etsy;
+    color: $white;
+    border-color: $etsy;
+  }
+
+  &.filterActive {
+    background: $etsy;
+    color: $white;
+    border-color: $etsy;
+  }
+}
+
+.filterWrapper .ff-filter i{
+  color: $inherit;
+}

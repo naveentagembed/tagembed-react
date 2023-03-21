@@ -1,0 +1,622 @@
+@import "./variables.scss";
+
+div#tagembed_main {
+  position: $posrel;
+}
+
+  .postItem {
+    overflow: $hidden;
+  }
+
+  .postedText,
+  .postedText .getContent {
+    text-align: $center;
+  }
+
+  .modernCard.flatThemeCard .post {
+    border-radius: $p6;
+  }
+
+  .themesWrapper {
+    overflow: $hidden !important;
+    height: $inherit;
+    padding-bottom: $p0;
+  }
+
+  .poweredBy,
+  .postAuthorInfo,
+  .popupSocialLink,
+  .cardPostCTA {
+    @include poweredby;
+  }
+
+  .themeWrap {
+    left: $p0;
+    position: $posrel;
+  }
+
+  /* SCROLLER */
+  .scrollbar-thumb {
+    background: $primary !important;
+    width: $p4 !important;
+  }
+
+  .scrollbar-track-y {
+    top: $p0;
+    right: $p0;
+    height: $sizefull;
+    width: $p4 !important;
+  }
+
+  .scrollbar-track-x {
+    display: $none !important;
+  }
+
+  /* POST AUTHOR */
+  .postAuthor {
+    position: $posrel;
+    padding: $p12;
+
+    & .authorInfo {
+      padding-right: $p26;
+      @extend %d-flex;
+
+      & img {
+        width: $p48;
+        height: $p48;
+        @extend %box-shadow;
+      }
+    }
+
+    & .postNetwork {
+      position: $posabs;
+      right: $h10;
+      top: $h10;
+      font-size: $fs22;
+    }
+  }
+
+  .postAuthorVk {
+    position: $posrel;
+    padding: $p18;
+
+    & .authorInfo {
+      padding-right: $p26;
+      @extend %d-flex;
+
+      & img {
+        width: $p48;
+        height: $p48;
+        @extend %box-shadow;
+      }
+    }
+
+    & .postNetwork {
+      position: $posabs;
+      right: $h10;
+      top: $h10;
+      font-size: $fs22;
+    }
+  }
+
+  .postAuthorInfo {
+    width: calc($sizefull - $p48);
+    position: $posrel;
+    padding-left: $p8;
+
+    & .postAuthorName {
+      font-weight: $fw6;
+    }
+  }
+
+  .authorDetailsHide {
+    min-height: $p52;
+  }
+
+  .authorDetailsHide .authorInfo {
+    @extend %ai-center;
+    height: $p36;
+  }
+
+  .postAuthorInfo {
+    & .authrHandleTime {
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & .timePost {
+        width: $h90;
+        @include ellipsis;
+      }
+    }
+  }
+
+  /* POST CONTENT CARD */
+  .post {
+    border: $bordertype1;
+    position: $posrel;
+
+    & .postContent .image {
+      position: $posrel;
+      overflow: $hidden;
+
+      // popup carousel icon
+      & .multipostIcon {
+        position: $posabs;
+        top: $h10;
+        right: $h40;
+
+        img {
+          height: $h20;
+        }
+      }
+
+      & .videoIcon {
+        position: $posabs;
+        top: $sizehalf;
+        left: $p0;
+        text-align: $center;
+        right: $p0;
+        @extend %translateY50;
+        opacity: $opacity8;
+        @extend %trans3s;
+        margin: $p0 $auto;
+
+        & img {
+          width: $p62 !important;
+          height: $auto !important;
+          @include scale1;
+          @extend %trans3s;
+        }
+      }
+    }
+
+    & .postContent:hover .videoIcon {
+      opacity: $lh1;
+
+      & img {
+        @include scale11;
+        cursor: $pointer;
+      }
+    }
+  }
+
+  .postCardContent {
+    padding: $p12;
+
+    & p {
+      margin: $p0;
+      @extend %wordbreak;
+    }
+  }
+
+  /* For-Empty-Post-Content-Quote-Hidden */
+  .postCardContent p:empty {
+    display: $none;
+  }
+
+  .postCardContentHide {
+    padding: $p0;
+  }
+
+  .flatThemeCard .postedText h1 {
+    font-size: $inherit;
+    font-family: $inherit;
+    font-weight: $fw6;
+  }
+
+  .post .postContent .image img {
+    @include objfitcover;
+    height: $sizefull;
+  }
+
+  /* SHARE WRAPPER */
+  .postContent:hover .shareOptions {
+    @extend %translateXzero;
+    left: $p0;
+  }
+
+  .shareOptions {
+    position: $posabs;
+    left: -10px;
+    top: $p2;
+    padding: $p0;
+    margin: $p16 $p0 $p0 $p16;
+    @extend %translateX100;
+    @extend %trans2s;
+
+    & a {
+      width: $p32;
+      height: $p32;
+      display: $dinlineblock;
+      text-align: $center;
+      border-radius: $sizehalf;
+      font-size: $h20;
+      background: $white;
+      line-height: $p32;
+      box-shadow: $p0 $p0 $h5 rgba(0, 0, 0, 0.2);
+      position: $posrel;
+      z-index: $lh2;
+      @extend %trans2s;
+
+      &:nth-child(1) {
+        z-index: $lh3;
+      }
+
+      &:nth-child(2) {
+        transform: translateX(-32px);
+      }
+
+      &:nth-child(3) {
+        transform: translateX(-64px);
+      }
+
+      &:nth-child(4) {
+        transform: translateX(-96px);
+      }
+    }
+
+    & .fbShare {
+      color: $fbshare;
+    }
+
+    & .twShare {
+      color: $twshare;
+    }
+
+    & .liShare {
+      color: $share;
+    }
+
+    &:hover a {
+      transform: translateX(0);
+      margin: $p0 $h5 $p0 $p0;
+    }
+  }
+
+  .modal-only-image .taggImageHolder {
+    height: $auto !important;
+  }
+
+  .modal-only-image .taggImageHolder img {
+    min-height: $sizefull !important;
+  }
+
+  /* CTA */
+  .cardPostCTA {
+    width: $sizefull;
+    display: inline-flex;
+    margin-top: 12.8px;
+  }
+
+  .cardPostCTA a {
+    display: $dinlineblock;
+    position: $posrel;
+    width: $sizefull;
+    border-radius: $p4;
+    padding: 11.2px;
+    text-align: $center;
+    @extend %trans5s;
+    text-transform: $uppercase;
+    @include ellipsis;
+    font-size: $fs14;
+    z-index: $lh2;
+
+    &:hover:before {
+      background-color: rgba($color: #000, $alpha: 0.15);
+    }
+
+    &:before {
+      content: "";
+      position: $posabs;
+      left: $p0;
+      top: $p0;
+      width: $sizefull;
+      height: $sizefull;
+      background-color: rgba($color: #000, $alpha: 0);
+      z-index: -1;
+      @extend %trans3s;
+    }
+  }
+
+  /* RATING */
+  .postRating {
+    text-align: $center;
+    margin-bottom: $p12 !important;
+  }
+
+  /* TEXT DECORATION */
+  .setFont.decorateTxt h1:before,
+  .setFont.decorateTxt p:before {
+    content: "\f10d";
+    margin: $p0 $h10 $p0 $p0;
+    text-align: $left;
+    position: $p0;
+    top: $p0;
+    font-weight: $fw4;
+  }
+
+  .setFont.decorateTxt p:after {
+    content: "\f10e";
+    margin: $h5 $p0 $p0 $h10;
+    text-align: $right;
+    position: $posrel;
+    top: $p0;
+  }
+
+  .setFont.decorateTxt h1:before,
+  .setFont.decorateTxt p:after,
+  .setFont.decorateTxt p:before {
+    font-family: $fw;
+    display: $dinline;
+    font-size: $inherit;
+    line-height: $lh1;
+  }
+
+  /* SOCAIL ACTION */
+  .socialPostAction {
+    @include bg-opacity4;
+    @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-flexend;
+  }
+
+  .socialPostAction a {
+    font-size: $p16;
+    vertical-align: $valignmiddle;
+    padding: $p8;
+    color: $inherit;
+    @extend %trans3s;
+  }
+
+  .socialPostAction a:nth-child(3) {
+    padding-right: $h10;
+  }
+
+  .socialPostAction a.fa-heart-o:hover:before {
+    content: "\f004";
+  }
+
+  .socialPostAction a.fa-share-square-o:hover:before {
+    content: "\f14d";
+  }
+
+  .socialPostAction a.fa-retweet:hover {
+    @include rotate180;
+  }
+
+  /* SHOW MORE */
+  .loadMoreWrapper {
+    text-align: $center;
+  }
+
+  .showMoreStyle2 {
+    background-color: $skyblue !important;
+    border-radius: $p12 !important;
+    width: $p48;
+    height: $p48;
+    text-align: $center;
+    border-color: $transparent !important;
+
+    & i.fa-angle-down {
+      font-size: $p32 !important;
+      color: $darkgrey;
+    }
+
+    & i.fa-spinner {
+      font-size: 19.84px !important;
+    }
+  }
+
+  .loadMoreBtn {
+    margin-top: $p16;
+  }
+
+  .tagembedImageWrapper.videoMax100.imageCard {
+    max-width: $w510;
+  }
+
+  /* FACEBOOK REACT VIDEO */
+  .modal-text-image div.modalWrapper.modal-fbvideo {
+    display: $table;
+  }
+
+  .modalWrapper.modal-fbvideo .tagembedContentWrapper,
+  .modalWrapper.modal-fbvideo .tagembedImageWrapper.iframeVideo {
+    display: $tablecell;
+    vertical-align: $valigntop;
+  }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper { Anubhav Kumawat
+  //   padding: $p0;
+  // }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper .modalOnlyContent {  AK
+  //   padding: $p0;
+  // }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper .modalOnlyContent p {  AK
+  //   padding-left: $p12;
+  //   padding-right: $p12;
+  // }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper .postAuthorWrapper {  AK
+    // padding: $p12 $p12 $p0 $p12;
+  //   padding: $p12;
+  // }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper .postAuthorWrapper .postNetwork {
+  //   top: $p12;
+  //   right: $p12;
+  // }
+
+  // .modal-text-image + .modalWrapper .tagembedContentWrapper .socialPanel { AK
+  //   padding: $p12;
+  //   position: $unset;
+  //   padding-bottom: $p0;
+  //   position: $posabs;
+  //   bottom: $p12;
+  //   left: $p0;
+  //   right: $p0;
+  // }
+
+  /* JS CODE CHANGES */
+  .themeStart20 pre.chtrLimits.emojiApplied,
+  .themeStart5 pre.chtrLimits.emojiApplied,
+  .themeStart3 pre.chtrLimits.emojiApplied,
+  .themeStart4 pre.chtrLimits.emojiApplied,
+  .themeStart19 pre.chtrLimits.emojiApplied,
+  .themeStart50 pre.chtrLimits.emojiApplied,
+  .themeStart16 pre.chtrLimits.emojiApplied,
+  .themeStart49 pre.chtrLimits.emojiApplied,
+  .themeStart47 pre.chtrLimits.emojiApplied,
+  .themeStart52 pre.chtrLimits.emojiApplied,
+  .themeStart53 pre.chtrLimits.emojiApplied,
+  .themeStart54 pre.chtrLimits.emojiApplied,
+  .themeStart55 pre.chtrLimits.emojiApplied,
+  .themeStart56 pre.chtrLimits.emojiApplied {
+    white-space: $normal;
+    margin-top: $p0;
+    margin-bottom: $p0;
+    color: $inherit;
+    font-size: $inherit;
+    text-align: $inherit;
+    font-style: $inherit;
+    font-weight: $inherit;
+    font-family: $inherit;
+    line-height: $normal;
+    /* JS CODE CHANGES */
+    display: $inherit;
+    padding: $inherit;
+    background-color: $inherit;
+    border: $inherit;
+  }
+
+  .theme49 pre.chtrLimits.emojiApplied,
+  .theme19 pre.chtrLimits.emojiApplied {
+    height: $auto;
+    overflow: $unset;
+  }
+
+  .theme19 .postAuthor.authorDetailsHide {
+    min-height: $inherit;
+    height: $auto;
+    padding: $p0;
+  }
+
+  .postByInstaHandel {
+    border: $bordertype2;
+    display: $none !important;
+  }
+
+  /*--TiktopPopup--*/
+  .tiktopPopupwrap #tagembedPopup {
+    border-radius: $p0;
+  }
+
+  .tiktopPopupwrap .imageCardN31 {
+    border-radius: $p0;
+    width: $auto;
+  }
+
+  .tiktopPopupwrap .tiktok-embed {
+    margin-top: $p0;
+    margin-bottom: $p0;
+    border-radius: $p0;
+    overflow-y: $auto;
+  }
+
+  .tiktopPopupwrap .modal-content::before {
+    content: "";
+    background-image: url(https://cdn.tagembed.com/app/img/tiktok-bg-3.gif);
+    position: $posabs;
+    left: $p0;
+    right: $p0;
+    margin: $p0 $auto;
+    top: $sizehalf;
+    @extend %translateY50;
+    text-align: $center;
+    background-repeat: $norepeat;
+    height: $w150;
+    width: $w150;
+    background-size: $contain;
+  }
+
+  .tiktopPopupwrap .tagembedImageWrapper {
+    background-color: $white;
+    border-radius: $p0;
+  }
+
+  /*--TikTok--*/
+  i.fa.fa-tiktok {
+    color: $transparent !important;
+  }
+
+  i.fa.fa-tiktok::before {
+    content: " ";
+    width: $h20;
+    background-image: url("https://cdn.tagembed.com/app/img/social-icons/31.svg");
+    background-repeat: $norepeat;
+    background-size: $contain;
+    height: $h20;
+    display: $block;
+  }
+
+  /* youTube popup */
+  .tagembedContentWrapper .setFont h1 {
+    padding-left: $p12;
+    padding-right: $p12;
+  }
+
+  .imgDisplay.imgBlock {
+    min-height: $w250;
+    display: $block !important;
+  }
+
+  /*--SoundCloudPopup-START--*/
+  .tg-embed-iframe iframe {
+    min-height: $w280;
+  }
+
+  /*--SoundCloudPopup-END--*/
+
+  // .modal-text-image .modalWrapper { AK
+  //   width: $w800;
+  //   max-width: $w800;
+  // }
+  .modal-text-image .modalWrapper.modalHastagWrapperN31 {
+    width: $auto;
+  }
+
+  video.videoMax100 {
+    width: $sizefull;
+  }
+
+  /*  NEW CSS FOR LITE CODE */
+
+  .shareOptions a {
+    color: $sharea;
+     /* added due to client issue*/
+     cursor: $inherit;
+  }
+
+  .shareOptions i {
+    color: $inherit;
+  }
+
+@media (max-width: 991px) {
+  div.tagembed-socialwall,
+  div#tagembed_main {
+    .modal-text-image .modalWrapper {
+      width: $inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.tagembed-socialwall,
+  div#tagembed_main {
+    .themeWrap {
+      left: $p0;
+    }
+  }
+}

@@ -1,0 +1,529 @@
+.bannerTop, .bannerBottom {
+  .themeBanner {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .bannerLogo {
+    position: relative;
+
+    img {
+      max-height: 70px;
+      padding: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .headBannerHashtag {
+    text-align: center;
+  }
+
+  .bannerRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .headbannerSocialIcon {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  .headbannerSocialIcon {
+    li {
+      height: auto !important;
+      line-height: normal !important;
+
+      a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+  }
+}
+
+
+.tiktok-icon {
+  max-height: 20px;
+}
+
+.themeBanner {
+  overflow: hidden;
+}
+
+.themeBanner.banner-2-s {
+  .bannerMiddle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  .headbannerSocialIcon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -19px;
+  }
+
+  .bannerRight {
+    .searchBar {
+      height: 100%;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+    }
+  }
+}
+
+.themeBanner.banner-2,
+.themeBanner.banner-3,
+.themeBanner.banner-4,
+.themeBanner.banner-5 {
+  .bannerLogo {
+    img {
+      max-height: 90px;
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.themeBanner.banner-3,
+.themeBanner.banner-4,
+.themeBanner.banner-5 {
+  .bannerRight {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.themeBanner.banner-4 {
+  .bannerContent {
+    display: none;
+  }
+}
+
+.themeBanner.banner-2-s .bannerRight.withoutLearnmore,
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore .headbannerSocialIcon {
+  padding-bottom: 0px;
+}
+
+/*Banner Type-2*/
+.themeBanner.banner-2 {
+  & .bannerLeft,
+  .bannerMiddle,
+  .bannerRight {
+    position: absolute;
+  }
+}
+
+.themeBanner.banner-2 {
+  position: relative;
+
+  & .bannerLeft {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & .bannerMiddle {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & .bannerRight {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    margin-top: -19px;
+  }
+
+  & .headbannerSocialIcon li {
+    margin: 4px;
+
+    & i {
+      width: 100%;
+      text-align: center;
+      line-height: inherit;
+    }
+  }
+}
+
+/*Banner Type-3*/
+.themeBanner.banner-3 {
+  position: relative;
+}
+
+/*Banner Type-4*/
+.themeBanner.banner-4 {
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    width: 180px;
+    z-index: -1;
+  }
+}
+
+.themeBanner.banner-4 {
+  & .bannerLeft {
+    & .bannerLogo {
+      display: none;
+    }
+  }
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & h1 {
+        padding-left: 6px;
+        margin: 0;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: 4px;
+  }
+}
+
+.themeBanner.banner-4 .headbannerSocialIcon li .fa.fa-twitter {
+  margin-top: 5px;
+}
+
+.themeBanner.banner-4 .headbannerSocialIcon {
+  margin: 0px;
+}
+
+/*Banner Type-5*/
+.themeBanner.banner-5 {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    min-width: 200px;
+    width: 15%;
+    transform: skewX(-24deg) translateX(-26px);
+  }
+}
+
+.themeBanner.banner-5 {
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & h1 {
+        padding-left: 6px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/*--Start-- Custome Banner With Search*/
+/*Banner Type-2*/
+
+.themeBanner.banner-2-s {
+  position: relative;
+
+  & .headbannerSocialIcon li {
+    margin: 4px;
+  }
+}
+
+/*Banner Type-3*/
+/*Banner Type-4*/
+.themeBanner.banner-4-s {
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent;
+
+  & .bannerLeft,
+  .bannerMiddle,
+  .bannerRight {
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .bannerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .bannerMiddle {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+  }
+
+  .bannerMiddle {
+    div.headBannerHashtag {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+}
+
+.themeBanner.banner-4-s {
+  & .bannerLeft {
+    & .bannerLogo {
+      display: none;
+    }
+  }
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      & span {
+        margin-right: 5px;
+      }
+
+      & h1 {
+        margin: 0px;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: 0px;
+  }
+}
+
+.themeBanner.banner-4-s .headbannerSocialIcon {
+  margin: 0px;
+}
+
+/*Banner Type-5*/
+.themeBanner.banner-5-s {
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    min-width: 200px;
+    width: 22%;
+    -webkit-transform: skewX(-21deg) translateX(-26px);
+    -ms-transform: skewX(-21deg) translateX(-26px);
+    transform: skewX(-21deg) translateX(-26px);
+  }
+}
+
+.themeBanner.banner-5-s {
+  position: relative;
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & h1 {
+        padding-left: 6px;
+        margin: 0;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: 4px;
+  }
+}
+
+/*--End-- Custome Banner With Search*/
+
+.headbannerSocialIcon {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 4px;
+  flex-direction: row;
+}
+
+.headbannerSocialIcon li::marker {
+  content: none;
+}
+
+.headbannerSocialIcon li {
+  display: inherit;
+}
+
+.headbannerSocialIcon li {
+  display: inherit;
+  justify-content: center;
+}
+
+.bannerLogo img {
+  max-height: 100%;
+}
+
+.bannerMiddle h1 {
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.headbannerSocialIcon {
+  & .fa.fa-facebook {
+    color: #3b5998;
+  }
+
+  & .fa.fa-twitter {
+    color: #00aced;
+  }
+
+  & .fa.fa-instagram {
+    color: #cd486b;
+  }
+}
+
+.tagembed-mobile-banner {
+  background-color: rgb(19, 115, 123);
+  min-height: 100px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.tagembed-mobile-banner img {
+  max-width: 60px;
+  width: 100%;
+}
+
+.tagembed-mobile-banner p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.tagembed-mobile-banner h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  margin: 0;
+}
+
+.mobileHeadbannerSocialIcon {
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .tagembed-mobile-banner img {
+    max-width: 40px;
+  }
+  .tagembed-mobile-banner p {
+    font-size: 16px;
+  }
+  .tagembed-mobile-banner h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .themeBanner.banner-2 .bannerRight,
+  .themeBanner.banner-3 .bannerRight,
+  .themeBanner.banner-5 .bannerRight {
+    display: none;
+  }
+  .themeBanner.banner-3 .bannerMiddle,
+  .themeBanner.banner-5 .bannerMiddle {
+    left: inherit;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .themeBanner.banner-4 .bannerRight {
+    right: 0;
+  }
+  .themeBanner.banner-4 .bannerMiddle .headBannerHashtag,
+  .themeBanner.banner-5 .bannerMiddle .headBannerHashtag {
+    flex-direction: column;
+  }
+  .themeBanner.banner-4:after {
+    width: 136px;
+  }
+  .themeBanner.banner-5:before {
+    min-width: 176px;
+  }
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.noPostSec {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 100%; }
+
+.noPostSec:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.03); }
+
+.noContentPost {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.03);
+  margin: auto;
+  position: relative;
+  top: 50%;
+  /* new css for 404 error code */ }
+  .noContentPost .manage-feed {
+    color: #4179ff; }
+
+.noPostBlockMsg h2 {
+  color: #4179ff; }
+
+/* limit post css start  */
+.limitExceed-wrap {
+  transform: translateY(-50%);
+  width: 50%;
+  max-width: 330px;
+  min-width: 290px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px 15px; }
+
+.limitExceed-wrap .limitExceed {
+  font-family: Poppins, Helvetica, "sans-serif"; }
+
+.limitExceed-wrap .limitExceed-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1f1d2c;
+  font-family: Poppins, Helvetica, "sans-serif";
+  font-weight: 500;
+  margin-top: 0; }
+
+.limitExceed-wrap .tagembedBranding {
+  position: absolute;
+  right: 0;
+  bottom: -26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.limitExceed-wrap .tagembedBranding span {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 400; }
+
+.limitExceed-wrap .limitExceed-content button {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.limitExceed-wrap .upgrade-btn.off {
+  display: none; }
+
+.limitExceed-wrap button.upgrade-btn {
+  border: 0;
+  padding: 8px 20px;
+  display: inline-block;
+  background: #4179fc;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out; }
+
+.limitExceed-wrap button.upgrade-btn:hover {
+  opacity: 0.9; }
+
+.limitExceed-wrap button.upgrade-btn a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Poppins, Helvetica, "sans-serif"; }
+
+.limitExceed-wrap .limitExceed p {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Poppins, Helvetica, "sans-serif";
+  margin-top: 20px; }
+
+.limitExceed-wrap .limitExceed-content {
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .limitExceed {
+    max-width: 94vw; } }
+
+/*# sourceMappingURL=error.css.map */

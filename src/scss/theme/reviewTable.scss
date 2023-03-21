@@ -1,0 +1,140 @@
+@import "../variables.scss";
+
+.themeStart53 {
+  & .themeWrap {
+    left: $p0;
+  }
+
+  & .postItem {
+    min-width: $sizefull !important;
+  }
+
+  & .post {
+    border-radius: $p12;
+    margin: $p0;
+  }
+
+  & .postAuthor {
+    padding: 14.4px !important;
+  }
+
+  & .postCardContent {
+    padding: $p0 14.4px 17.984px;
+
+    & .postedText {
+      text-align: $left;
+
+      &.setFont {
+        line-height: $size140;
+      }
+    }
+
+    & p {
+      @extend %wordbreak;
+    }
+  }
+
+  & .reviewHeader {
+    background-color: $white;
+    border-radius: $p12;
+    @extend %box-shadow3;
+    padding: $p16;
+    margin: 0 9.6px $p16;
+    @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-spacebetween;
+    @extend %flex-wrap;
+    & .fa-google-new {
+      width: $p36;
+      height: $p36;
+    }
+
+    & .brandName {
+      font-size: $p18;
+    }
+
+    & .reviewRating {
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & span:first-child {
+        font-size: 19.84px;
+        line-height: 19.84px;
+        font-weight: $fw6;
+        margin-right: $p8;
+      }
+
+      & span:nth-child(2) {
+        margin-right: $p8;
+      }
+    }
+
+    & .reviewHeaderBrand {
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & .reviewRatingWrapper {
+        margin-left: $p16;
+      }
+    }
+  }
+
+  & .writeReviewBtn {
+    margin-top: $p16 !important;
+  }
+
+  /* & .postRating {
+    text-align: $left !important;
+  }*/
+  /**/
+  & pre.chtrLimits.emojiApplied {
+    background-color: $transparent;
+    padding: $p0;
+  }
+  & p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+  & p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+  & p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+  & p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+
+  /* Hashtag highlighter trimcontent css start  */ 
+  pre.chtrLimits.emojiApplied.line2{
+    @include lineclamp2;
+  }
+
+  pre.chtrLimits.emojiApplied.line3{
+    @include lineclamp3;
+  }
+  pre.chtrLimits.emojiApplied.line4{
+    @include lineclamp4;
+  }
+  pre.chtrLimits.emojiApplied.line5{
+    @include lineclamp5;
+  }
+
+
+
+}
+
+@media (min-width: 576px) {
+  .themeStart52 {
+    & .writeReviewBtn {
+      margin-top: $p0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .themeStart53 {
+    & .postCardContent {
+      height: $auto;
+    }
+  }
+}

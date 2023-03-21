@@ -1,0 +1,209 @@
+@import "../variables.scss";
+
+$xsmall: $w374;
+$small: $w374;
+$medium: $w480;
+
+.theme4_poweredBy {
+  position: $posabs;
+  right: $h20;
+  z-index: $zindexbasic1;
+  top: $p6;
+}
+
+.themeStart4 {
+  & .postCardContent {
+    @include bg-opacity6;
+    border: $p0;
+    position: $posabs;
+    left: $p0;
+    top: $p0;
+    width: $sizefull;
+    height: $sizefull;
+    opacity: $p0;
+    @extend %transition4s;
+
+    & .postedText {
+      position: $posabs;
+      top: $sizehalf;
+      @extend %translateY55;
+      left: $p0;
+      right: $p0;
+      color: $white;
+      text-align: $center;
+      padding: $p0 $h10;
+    }
+  }
+
+  & .post:hover .postCardContent {
+    opacity: $lh1;
+  }
+
+  & .postAuthor {
+    position: absolute;
+    bottom: $p0;
+    left: $p0;
+    width: $sizefull;
+    opacity: $p0;
+    @extend %trans3s;
+
+    & .postNetwork {
+      display: $none;
+    }
+  }
+
+  & .post:hover .postAuthor {
+    opacity: $lh1;
+  }
+
+  & .postAuthor.minimumPost .authorInfo {
+    @extend %fd-column;
+    padding-right: $p0;
+    @extend %jc-center;
+    @extend %ai-center;
+    text-align: $center;
+
+    & .postAuthorInfo {
+      width: $sizefull;
+
+      & .authrHandleTime {
+        @extend %jc-center;
+      }
+    }
+  }
+
+  & .objectCard .postNetwork {
+    position: $posabs;
+    top: 12.8px;
+    right: 12.8px;
+    z-index: $zindexhigh;
+    line-height: $p0;
+
+    & i {
+      font-size: $p24;
+      color: $white !important;
+      @extend %text-shadow42;
+    }
+  }
+
+  & .post {
+    height: $sizefull;
+    margin: $p0;
+  }
+
+  & .postContent {
+    height: $sizefull;
+  }
+
+  & .post .image {
+    height: $sizefull;
+  }
+
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  & .loadMoreWrapper.loadmorebtn4 {
+    margin-bottom: $h10;
+  }
+
+  /*  NEW CSS FOR LITE CODE */
+  pre.text_trim.chtrLimits.emojiApplied {
+    background-color: $transparent;
+    padding: $p0;
+  }
+
+  /**/
+  & pre.chtrLimits.emojiApplied {
+    @include lineclamp4;
+  }
+
+  & p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+
+  & p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+
+  & p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+
+  & p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+
+  /* Hashtag highlighter trimcontent css start */
+  pre.text_trim.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+  }
+  pre.text_trim.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+  }
+  pre.text_trim.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+  }
+  pre.text_trim.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+  }
+
+
+  /**/
+
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    & .postItem {
+      overflow: $hidden;
+    }
+
+    & .postItem .postContent .image>div {
+      background-position: $center $center;
+      /* scss changes for client issue  */
+      min-height: 100% !important;
+    }
+
+    /* scss changes for client issue  */
+    & .post .postContent .image .videoIcon {
+      top: 80%;
+    }
+
+  }
+
+  @media screen and (max-width: $xsmall) {
+    & .postItem {
+      overflow: $hidden;
+      height: $w280;
+    }
+  }
+}

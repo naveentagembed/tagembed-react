@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* WORKPLACE ICON */
+@font-face {
+  font-family: workplace-icon;
+  src: url(./icons/workplace.eot?f135rl);
+  src: url(./icons/workplace.eot?f135rl#iefix) format("embedded-opentype"), url(./icons/workplace.ttf?f135rl) format("truetype"), url(./icons/workplace.woff?f135rl) format("woff"), url(./icons/workplace.svg?f135rl#workplace) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; }
+.icon-taggbox-workplace-2 {
+  font-family: workplace-icon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-taggbox-workplace-2:before {
+  content: ""; }
+
+/* AIRBNB ICON */
+@font-face {
+  font-family: airbnb;
+  src: url(./icons/airbnb.eot?s7nv64);
+  src: url(./icons/airbnb.eot?s7nv64#iefix) format("embedded-opentype"), url(./icons/airbnb.ttf?s7nv64) format("truetype"), url(./icons/airbnb.woff?s7nv64) format("woff"), url(./icons/airbnb.svg?s7nv64#airbnb) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; }
+.fa-airbnb:before {
+  content: ""; }
+
+.fa-airbnb {
+  font-family: airbnb;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* GIPHY ICON */
+@font-face {
+  font-family: giphy;
+  src: url(./icons/giphy.eot);
+  src: url(./icons/giphy.eot) format("embedded-opentype"), url(./icons/giphy.ttf) format("truetype"), url(./icons/giphy.woff) format("woff"), url(./icons/giphy.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; }
+.fa-giphy:before {
+  content: ""; }
+
+.fa-giphy {
+  font-family: giphy !important;
+  speak: none !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important; }
+
+/* YAMMER ICON */
+@font-face {
+  font-family: yammer;
+  src: url(./icons/yammer.eot?s7nv64);
+  src: url(./icons/yammer.eot?s7nv64#iefix) format("embedded-opentype"), url(./icons/yammer.ttf?s7nv64) format("truetype"), url(./icons/yammer.woff?s7nv64) format("woff"), url(./icons/yammer.svg?s7nv64#yammer) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; }
+.fa-yammer:before {
+  content: ""; }
+
+.fa-yammer {
+  font-family: yammer !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* SEPRATEDDOT */
+.sepratedot {
+  color: #000;
+  margin: 2px 4px 0 5px;
+  line-height: 18px;
+  font-family: FontAwesome;
+  font-size: 4px; }
+
+.sepratedot:before {
+  content: ""; }
+
+/* CAPTERRA ICON */
+@font-face {
+  font-family: 'capterra';
+  src: url(./icons/capterra.eot?f135rl);
+  src: url(./icons/capterra.eot?f135rl#iefix) format("embedded-opentype"), url(./icons/capterra.ttf?f135rl) format("truetype"), url(./icons/capterra.woff?f135rl) format("woff"), url(./icons/capterra.svg?f135rl#capterra) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+.fa-capterra {
+  font-family: 'capterra' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle; }
+
+.fa-capterra:before {
+  content: ""; }
+
+/* GOOGLE ICON */
+.fa-google-new {
+  background-image: url(https://cdn.tagembed.com/app/img/cards-icon/google.svg);
+  height: 22px;
+  width: 22px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* WEB FONTS */
+.font1 {
+  font-family: Rochester !important; }
+
+@font-face {
+  font-family: Rochester;
+  src: url(./webfont/Rochester-Regular.otf) format("opentype");
+  font-display: swap; }
+.font2 {
+  font-family: racing sans one !important; }
+
+@font-face {
+  font-family: racing sans one;
+  src: url(./webfont/RacingSansOne-Regular.ttf) format("truetype");
+  font-display: swap; }
+.font3 {
+  font-family: Homenaje !important; }
+
+@font-face {
+  font-family: Homenaje;
+  src: url(./webfont/Homenaje-Regular.ttf) format("truetype");
+  font-display: swap; }
+.font4 {
+  font-family: Lato !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Lato;
+  src: url(./webfont/Lato-Regular.ttf) format("truetype"); }
+.font5 {
+  /* font-family: open sans!important */
+  font-family: 'Open Sans'; }
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  src: url("./webfont/open-sans-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("./webfont/open-sans-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("./webfont/open-sans-v17-latin-regular.woff2") format("woff2"), url("./webfont/open-sans-v17-latin-regular.woff") format("woff"), url("./webfont/open-sans-v17-latin-regular.ttf") format("truetype"), url("./webfont/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+.font6 {
+  font-family: roboto condensed 700 !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: roboto condensed 700;
+  src: url(./webfont/RobotoCondensed-Bold.ttf) format("truetype"); }
+.font7 {
+  font-family: Oswald !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Oswald;
+  src: url(./webfont/Oswald-Regular.ttf) format("truetype"); }
+.font8 {
+  font-family: "droid serif" !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: 'droid serif';
+  src: url(./webfont/DroidSerif.eot);
+  src: url(./webfont/DroidSerif.eot?#iefix) format("embedded-opentype"), url(./webfont/DroidSerif.ttf) format("truetype"); }
+.font9 {
+  font-family: Bitter !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Bitter;
+  src: url(./webfont/Bitter-Regular.ttf) format("truetype"); }
+.font10 {
+  font-family: francois one !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: francois one;
+  src: url(./webfont/FrancoisOne.ttf) format("truetype"); }
+.font11 {
+  font-family: indie flower !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: indie flower;
+  src: url(./webfont/IndieFlower.eot);
+  src: url(./webfont/IndieFlower.eot?#iefix) format("embedded-opentype"), url(./webfont/IndieFlower.woff2) format("woff2"), url(./webfont/IndieFlower.woff) format("woff"), url(./webfont/IndieFlower.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+.font12 {
+  font-family: dancing script !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: dancing script;
+  src: url(./webfont/DancingScript-Regular.ttf) format("truetype"); }
+.font13 {
+  font-family: special elite !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: special elite;
+  src: url(./webfont/SpecialElite.ttf) format("truetype"); }
+.font14 {
+  font-family: Audiowide !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Audiowide;
+  src: url(./webfont/Audiowide-Regular.ttf) format("truetype"); }
+.font15 {
+  font-family: Chewy !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Chewy;
+  src: url(./webfont/Chewy.ttf) format("truetype"); }
+.font16 {
+  font-family: ubuntu mono !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: ubuntu mono;
+  src: url(./webfont/UbuntuMono-Regular.ttf) format("truetype"); }
+.font17 {
+  font-family: Righteous !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Righteous;
+  src: url(./webfont/Righteous-Regular.ttf) format("truetype"); }
+.font18 {
+  font-family: Bevan !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Bevan;
+  src: url(./webfont/Bevan.ttf) format("truetype"); }
+.font19 {
+  font-family: Orbitron !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Orbitron;
+  src: url(./webfont/Orbitron-Regular.eot);
+  src: url(./webfont/Orbitron-Regular.eot?#iefix) format("embedded-opentype"), url(./webfont/Orbitron-Regular.woff2) format("woff2"), url(./webfont/Orbitron-Regular.woff) format("woff"), url(./webfont/Orbitron-Regular.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+.font20 {
+  font-family: HelveticaNeueLight !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: HelveticaNeueLight;
+  src: url(./webfont/HelveticaNeueLight.eot);
+  src: url(./webfont/HelveticaNeueLight.eot?#iefix) format("embedded-opentype"), url(./webfont/HelveticaNeueLight.woff2) format("woff2"), url(./webfont/HelveticaNeueLight.woff) format("woff"), url(./webfont/HelveticaNeueLight.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+.font21 {
+  font-family: Avenir !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Avenir;
+  src: url(./webfont/Avenir-Medium.eot);
+  src: url(./webfont/Avenir-Medium.eot?#iefix) format("embedded-opentype"), url(./webfont/Avenir-Medium.woff2) format("woff2"), url(./webfont/Avenir-Medium.woff) format("woff"), url(./webfont/Avenir-Medium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+.font22 {
+  font-family: audi !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: audi;
+  src: url(./webfont/auditypev03-normal-webfont.eot);
+  src: url(./webfont/auditypev03-normal-webfont.eot?#iefix) format("embedded-opentype"), url(./webfont/auditypev03-normal-webfont.woff) format("woff"), url(./webfont/auditypev03-normal-webfont.ttf) format("truetype"), url(./webfont/auditypev03-normal-webfont.svg#AudiTypeNormal) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.3em; }
+.font23 {
+  font-family: audi-bold !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: audi-bold;
+  src: url(./webfont/auditypev03-bold-webfont.eot);
+  src: url(./webfont/auditypev03-bold-webfont.eot?#iefix) format("embedded-opentype"), url(./webfont/auditypev03-bold-webfont.woff) format("woff"), url(./webfont/auditypev03-bold-webfont.ttf) format("truetype"), url(./webfont/auditypev03-bold-webfont.svg#AudiTypeBold) format("svg");
+  font-weight: 700 !important;
+  font-style: normal;
+  letter-spacing: 0.07em; }
+.font24 {
+  font-family: Merriweather !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  src: url(./webfont/Merriweather-Regular.eot);
+  src: url(./webfont/Merriweather-Regular.eot?#iefix) format("embedded-opentype"), url(./webfont/Merriweather-Regular.woff2) format("woff2"), url(./webfont/Merriweather-Regular.woff) format("woff"), url(./webfont/Merriweather-Regular.ttf) format("truetype"), url(./webfont/Merriweather-Regular.svg#Merriweather-Regular) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+.font25 {
+  font-family: berenjena gris !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: berenjena gris;
+  src: url(./webfont/Berenjena-GrisItalica.eot);
+  src: url(./webfont/Berenjena-GrisItalica.eot?#iefix) format("embedded-opentype"), url(./webfont/Berenjena-GrisItalica.woff2) format("woff2"), url(./webfont/Berenjena-GrisItalica.woff) format("woff"), url(./webfont/Berenjena-GrisItalica.ttf) format("truetype"), url(./webfont/Berenjena-GrisItalica.svg#Berenjena-GrisItalica) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+.font26 {
+  font-family: Montserrat !important; }
+
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  src: url(./webfont/Montserrat-Medium.eot);
+  src: url(./webfont/Montserrat-Medium.eot?#iefix) format("embedded-opentype"), url(./webfont/Montserrat-Medium.woff2) format("woff2"), url(./webfont/Montserrat-Medium.woff) format("woff"), url(./webfont/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */

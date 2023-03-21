@@ -1,0 +1,216 @@
+@import "../variables.scss";
+
+.themeStart19 {
+  & .postAuthor {
+    position: $inherit;
+  }
+
+  & .onlyTextCard .shareOptions {
+    top: $h60;
+  }
+
+  & .poweredbywrapper {
+    padding-right: $h40 !important;
+  }
+
+  & .objectCard .authorInfo img {
+    position: $posrel;
+    top: -24px;
+  }
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  & .objectCard .postNetwork {
+    position: $posabs;
+    top: 12.8px;
+    right: 12.8px;
+    z-index: $zindexhigh;
+    line-height: $p0;
+
+    & i {
+      font-size: $p24;
+      color: $white !important;
+      @extend %text-shadow42;
+    }
+  }
+
+  & .socialPostAction {
+    padding: $h10 $p0;
+    border-top: $bordertype1;
+    @extend %jc-spacevenly;
+    @extend %flex-wrap;
+
+    & .social-shareWrapper {
+      position: $posrel;
+    }
+    & .popover-content {
+      display: $none;
+      position: $posabs;
+      bottom: $sizefull;
+      padding: $p0;
+      padding-bottom: $h10;
+      width: $w170;
+      right: -1px;
+      z-index: $zindex6;
+
+      & .popover-content-inner {
+        position: $posrel;
+        background: $greyshade3;
+        border-radius: $p4;
+        @include boxshadow1;
+
+        &:before {
+          content: "";
+          background: $white;
+          position: $posabs;
+          bottom: -5px;
+          right: $h20;
+          width: $h10;
+          height: $h10;
+          @include roatez;
+        }
+        & a {
+          @extend %d-flex;
+          @extend %ai-center;
+          color: $white;
+          font-size: $p13;
+          font-weight: $fw4;
+          line-height: $lh1;
+          border-top: $bordertop1;
+          padding: $p12;
+          cursor: $pointer;
+          @extend %trans2s;
+          position: $posrel;
+          text-align: $left;
+
+          &:first-child {
+            border-top: $p0;
+          }
+          &:hover {
+            background: $greyshade10;
+          }
+          & i {
+            margin-right: $p7;
+          }
+        }
+      }
+      &.onlyShare {
+        left: calc(50% - 110px);
+
+        & .popover-content-inner:before {
+          right: calc(50% - 30px);
+        }
+      }
+    }
+    & a {
+      width: $auto;
+      padding: $p0 $h5;
+      font-size: $p16;
+      line-height: $p16;
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & svg {
+        margin-right: $h5;
+        width: $h15;
+        height: $auto;
+      }
+
+      &:hover svg path {
+        stroke: $secondary;
+      }
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .trimContenTrue .image img {
+    max-height: $w400;
+    @include objfitcover;
+    height: $sizefull;
+  }
+
+  .trimContenTrue .videoIcon {
+    width: $p62 !important;
+    height: $auto !important;
+    @include scale1;
+    @extend %trans3s;
+  }
+
+  .trimContenTrue .postContent .postCardContent {
+    max-height: $w300;
+  }
+
+  // new code for LineTrim Start
+
+  p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+  p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+  p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+  p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+
+  p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+  p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+  p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+  p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+  // new code for LineTrim End
+
+   /* Hashtag highlighter trimcontent css start */
+   pre.chtrLimits.emojiApplied.line2{
+    @include lineclamp2;
+   }
+   pre.chtrLimits.emojiApplied.line3{
+    @include lineclamp3;
+   }
+   pre.chtrLimits.emojiApplied.line4{
+    @include lineclamp4;
+   }
+   pre.chtrLimits.emojiApplied.line5{
+    @include lineclamp5;
+   }
+
+  .trimContenTrue p.chtrLimits.emojiApplied {
+    @include lineclamp3;
+  }
+  /**/
+  & .objectCard .image ~ .postAuthor.Vk .authorInfo img {
+    top: -24px;
+  }
+  & .objectCard .postAuthor.Vk .authorInfo img {
+    top: 0;
+  }
+  & pre.chtrLimits.emojiApplied {
+    background: $transparent;
+  }
+  & .post {
+    margin: $p0;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../variables.scss";
+
+.themeStart52 {
+  & .post {
+    border-radius: $p12;
+    margin: $p0;
+  }
+
+  & .postCardContent {
+    height: $w210;
+    padding-right: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & .postedText {
+      height: 100%;
+      @extend %d-flex;
+      @extend %ai-center;
+      @extend %jc-center;
+      @extend %fd-column;
+      overflow: hidden;
+      overflow-y: auto;
+      padding-right: 12px;
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(196, 196, 196);
+        border-radius: 100px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 100px;
+        position: relative;
+        right: -10px;
+      }
+    }
+
+    & p:empty,
+    & pre:empty {
+      display: $none;
+    }
+    /* commented becoz there is no linetrim in reviewbox theme */ 
+    // &.isRating p,
+    // &.isRating pre {
+    //   @extend %lineclamp6;
+    // }
+  }
+
+  & .postAuthor .postNetwork {
+    top: $h20;
+  }
+
+  & .reviewHeader {
+    background-color: $white;
+    border-radius: $p12;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: $p16;
+    margin: 0 17.984px 16px;
+    @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-spacebetween;
+    @extend %flex-wrap;
+
+    & .fa-google-new {
+      width: $p36;
+      height: $p36;
+    }
+
+    & .brandName {
+      font-size: $p18;
+    }
+
+    & .reviewRating {
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & span:first-child {
+        font-size: 19.84px;
+        line-height: 19.84px;
+        font-weight: $fw6;
+        margin-right: $p8;
+      }
+
+      & span:nth-child(2) {
+        margin-right: $p8;
+      }
+    }
+
+    & .reviewHeaderBrand {
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & .reviewRatingWrapper {
+        margin-left: $p16;
+      }
+    }
+  }
+
+  & .writeReviewBtn {
+    margin-top: $p16 !important;
+  }
+  /**/
+  & pre.chtrLimits.emojiApplied {
+    background-color: $transparent;
+    padding: $p0;
+  }
+}
+
+@media (min-width: 576px) {
+  .themeStart52 {
+    & .writeReviewBtn {
+      margin-top: $p0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .themeStart52 {
+    & .postCardContent {
+      height: $auto;
+    }
+
+    & .reviewHeader {
+      margin: $p0 12.8px $p16;
+    }
+  }
+}

@@ -1,0 +1,278 @@
+@import "../variables.scss";
+
+.themeStart55 {
+  .tb-mo_slider-item:focus-visible,
+  *:focus-visible {
+    outline: $none;
+  }
+
+  .mo_slider-hover ._socialAction {
+    color: $darkgrey2;
+    bottom: $p0;
+    position: $posabs;
+    @extend %d-flex;
+    @extend %ai-center;
+    width: $sizefull;
+    @extend %jc-flexend;
+    background: $none;
+  }
+
+  .tb-mo_slider-item {
+    width: $sizefull;
+    position: $posrel;
+    display: $block !important;
+  }
+
+  .tb_mo_slider_pre_arrow svg,
+  .tb_mo_slider_next_arrow-next svg {
+    height: $fs14;
+  }
+
+  .tb_mo_slider_next_arrow,
+  .tb_mo_slider_pre_arrow {
+    border-radius: $p3;
+    background-color: $black;
+    opacity: $opacity9;
+    @extend %transition4s;
+    cursor: $pointer;
+    color: $transparent;
+    width: $h30;
+    height: $h30;
+    overflow: $hidden;
+    top: $sizehalf;
+    margin-top: -15px;
+    position: $posabs;
+    z-index: 9 !important;
+    // @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-center;
+    @extend %d-flex;
+  }
+
+  #eThemePosts:hover .tb_mo_slider_next_arrow,
+  #eThemePosts:hover .tb_mo_slider_pre_arrow {
+    @extend %d-flex;
+  }
+
+  .tb_mo_slider_next_arrow {
+    right: $h5;
+    left: $auto;
+  }
+
+  .tb_mo_slider_pre_arrow {
+    left: $h5;
+    right: $auto;
+  }
+
+  .tb_mo_slider_next_arrow:hover,
+  .tb_mo_slider_pre_arrow:hover {
+    opacity: $opacity6;
+  }
+
+  .rowBlock {
+    display: block !important;
+    // border: 2px solid red;
+  }
+  .slick-slide {
+    >div {
+      margin-bottom: 3px;
+      // border: 1px solid blue;
+    }
+    >div+div {
+      margin-bottom: 0px;
+      // border: 1px solid red;
+    }
+  }
+
+  .slick-slide {
+    height: $auto;
+  }
+
+  .theme55 .slick-track {
+    min-width: $wfull;
+  }
+
+  & .postCardContent .postedText {
+    position: $posabs;
+    top: $sizehalf;
+    @extend %translateY55;
+    left: $size3;
+    right: $size3;
+    color: $white;
+    text-align: $center;
+    width: $size94;
+
+    & p,
+    & h1 {
+      color: $inherit;
+    }
+  }
+
+  & .flatThemeCard {
+    height: $sizefull;
+    padding: $p0;
+
+    &:hover .postCardContent {
+      opacity: $lh1;
+    }
+
+    &:hover h1,
+    &:hover .sepratedot {
+      color: $white;
+    }
+  }
+
+  // popup carousel icon
+.flatThemeCard .Image div.multipostIcon {
+  position: $posabs;
+  top: $h15;
+  left: $h15;
+  right: auto;
+
+  img {
+    height: $h20;
+    width: $h20;
+    max-height: $h20;
+    min-height: $h20;
+    border-radius: 0;
+  }
+}
+
+
+
+  .themeStart55 .flatThemeCard .postImg img.postVideoIcon {
+    width: $auto;
+    height: $p18;
+    position: $posabs;
+    top: $p21;
+    right: $p21;
+    left: $inherit;
+  }
+
+  .postNetwork {
+    position: $posabs;
+    text-align: $center;
+    z-index: $zindex9;
+    left: $p0;
+    right: $p0;
+    margin: $p0 $auto;
+    top: $sizehalf;
+    @extend %translateY50;
+    display: $none;
+  }
+
+  .postNetwork i {
+    color: $white;
+    font-size: $p24;
+  }
+
+  .flatThemeCard:hover .postNetwork {
+    display: $block;
+  }
+
+  .postCardContent .postedText {
+    position: $posabs;
+    top: $sizehalf;
+    @extend %translateY55;
+    left: $size3;
+    right: $size3;
+    color: $white;
+    text-align: $center;
+    width: $size94;
+
+    & p,
+    & h1 {
+      color: $inherit;
+    }
+  }
+
+  .postCardContent {
+    border: $p0;
+    position: $posabs;
+    left: $p0;
+    top: $p0;
+    width: $sizefull;
+    height: $sizefull;
+    opacity: $p0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    & .postCardCTA {
+      background-color: #4179ff;
+      color: #fff;
+      border-color: #3699ff;
+      padding: 0.6rem 1.25rem;
+      border-radius: 4px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #4179ff;
+        background: #fff;
+      }
+    }
+  }
+
+  .flatThemeCard .postImg,
+  .flatThemeCard > div:first-child {
+    overflow: hidden;
+  }
+
+  .flatThemeCard .postImg {
+    height: 100%;
+  }
+
+  .flatThemeCard .postImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .flatThemeCard .postImg {
+    @extend %trans1s;
+  }
+
+  .flatThemeCard:hover .postImg {
+    @include scale07;
+    @extend %trans1s;
+  }
+
+  .cardPostCTA a {
+    @include ellipsis;
+    max-width: $w160;
+  }
+
+  @media (max-width: 991px) {
+    .tb_mo_slider_next_arrow,
+    .tb_mo_slider_pre_arrow {
+      width: $h30;
+      height: $h30;
+      top: $sizehalf;
+      margin-top: -22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tb_mo_slider_next_arrow,
+    .tb_mo_slider_pre_arrow {
+      width: $h25;
+      height: $h25;
+      top: $sizehalf;
+      margin-top: -17px;
+    }
+  }
+}

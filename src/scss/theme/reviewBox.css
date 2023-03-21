@@ -1,0 +1,93 @@
+.themeStart52 .postCardContent .postedText, .themeStart52 .reviewHeader, .themeStart52 .reviewHeader .reviewRating, .themeStart52 .reviewHeader .reviewHeaderBrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.themeStart52 .postCardContent .postedText, .themeStart52 .reviewHeader, .themeStart52 .reviewHeader .reviewRating, .themeStart52 .reviewHeader .reviewHeaderBrand {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeStart52 .postCardContent .postedText {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.themeStart52 .reviewHeader {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.themeStart52 .reviewHeader {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.themeStart52 .postCardContent .postedText {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.themeStart52 {
+  /**/ }
+  .themeStart52 .post {
+    border-radius: 12px;
+    margin: 0; }
+  .themeStart52 .postCardContent {
+    height: 210px;
+    padding-right: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* commented becoz there is no linetrim in reviewbox theme */ }
+    .themeStart52 .postCardContent .postedText {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: auto;
+      padding-right: 12px; }
+      .themeStart52 .postCardContent .postedText::-webkit-scrollbar-thumb {
+        background-color: #c4c4c4;
+        border-radius: 100px; }
+      .themeStart52 .postCardContent .postedText::-webkit-scrollbar {
+        width: 3px;
+        border-radius: 100px;
+        position: relative;
+        right: -10px; }
+    .themeStart52 .postCardContent p:empty, .themeStart52 .postCardContent pre:empty {
+      display: none; }
+  .themeStart52 .postAuthor .postNetwork {
+    top: 20px; }
+  .themeStart52 .reviewHeader {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 0 17.984px 16px; }
+    .themeStart52 .reviewHeader .fa-google-new {
+      width: 36px;
+      height: 36px; }
+    .themeStart52 .reviewHeader .brandName {
+      font-size: 18px; }
+    .themeStart52 .reviewHeader .reviewRating span:first-child {
+      font-size: 19.84px;
+      line-height: 19.84px;
+      font-weight: 600;
+      margin-right: 8px; }
+    .themeStart52 .reviewHeader .reviewRating span:nth-child(2) {
+      margin-right: 8px; }
+    .themeStart52 .reviewHeader .reviewHeaderBrand .reviewRatingWrapper {
+      margin-left: 16px; }
+  .themeStart52 .writeReviewBtn {
+    margin-top: 16px !important; }
+  .themeStart52 pre.chtrLimits.emojiApplied {
+    background-color: transparent;
+    padding: 0; }
+
+@media (min-width: 576px) {
+  .themeStart52 .writeReviewBtn {
+    margin-top: 0 !important; } }
+@media screen and (max-width: 767px) {
+  .themeStart52 .postCardContent {
+    height: auto; }
+  .themeStart52 .reviewHeader {
+    margin: 0 12.8px 16px; } }
+
+/*# sourceMappingURL=reviewBox.css.map */

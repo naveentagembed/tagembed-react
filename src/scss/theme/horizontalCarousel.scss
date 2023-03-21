@@ -1,0 +1,226 @@
+@import "../variables.scss";
+
+.themeStart16 {
+  & .themeWrap {
+    left: $p0;
+  }
+
+  & .post,
+  & .post .image,
+  & .postContent {
+    height: $inherit;
+    margin: $p0;
+    border: $p0;
+  }
+
+  & .postNetwork {
+    position: $posabs;
+    bottom: $p16;
+    left: calc(50% - 12px);
+    z-index: $zindexhigh;
+    line-height: $p0;
+
+    & i {
+      font-size: $p24;
+      color: $white !important;
+      @extend %text-shadow42;
+    }
+  }
+
+  // popup carousel icon
+  .post .image .multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  // video icon
+  .post .image img.postVideoIcon {
+    border-radius: 0;
+    height: auto;
+    max-height: 20px;
+    min-height: inherit;
+    min-width: inherit;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: auto;
+  }
+
+  & .postAuthor .postNetwork {
+    display: $none;
+  }
+
+  & .postCardContent .postedText {
+    position: $posabs;
+    top: $sizehalf;
+    @extend %translateY55;
+    left: $size3;
+    right: $size3;
+    color: $white;
+    text-align: $center;
+    width: $size94;
+
+    & p,
+    & h1 {
+      color: $inherit;
+    }
+  }
+
+  & .flatThemeCard {
+    height: $sizefull;
+    padding: $p0;
+
+    &:hover .postCardContent {
+      opacity: $lh1;
+    }
+
+    &:hover h1,
+    &:hover .sepratedot {
+      color: $white;
+    }
+  }
+
+  & .postImg {
+    background-size: $cover !important;
+    background-position: $center $center !important;
+    opacity: $lh1;
+    width: $sizefull;
+    height: $sizefull;
+    background-repeat: $norepeat;
+  }
+
+  & .postCardContent {
+    border: $p0;
+    position: $posabs;
+    left: $p0;
+    top: $p0;
+    width: $sizefull;
+    height: $sizefull;
+    opacity: $p0;
+    @include bg-opacity7;
+    @extend %transition4s;
+  }
+
+  & .slick-nav div {
+    border-radius: $p3;
+    text-indent: -200px;
+    background-color: $black;
+    opacity: $opacity3;
+    @extend %transition4s;
+    @extend %box-shadownone;
+    cursor: $pointer;
+    color: $transparent;
+    width: $p44;
+    height: $p54;
+    overflow: $hidden;
+    top: $sizehalf;
+    @extend %translateY50;
+    margin: $p0;
+    position: $posabs;
+  }
+
+  & .tryHorizontalStyle:before {
+    content: $none;
+  }
+
+  & .tryHorizontalStyle-pre {
+    left: $p0;
+    background: url("https://cdn.tagembed.com/app/img/homeSlider-arrow-left.png") no-repeat center center #000 !important;
+    background-size: $auto $h30 !important;
+
+    &:hover {
+      opacity: $opacity8;
+    }
+  }
+
+  & .tryHorizontalStyle-next {
+    background: url("https://cdn.tagembed.com/app/img/homeSlider-arrow-right.png") no-repeat center center #000 !important;
+    background-size: $auto $h30 !important;
+    right: $p0;
+
+    &:hover {
+      opacity: $opacity8;
+    }
+  }
+
+  & .tryHorizontalStyle-next-loader {
+    background: url("https://cdn.tagembed.com/app/image/loader.svg") no-repeat center center #000 !important;
+    background-size: $auto $h30 !important;
+    right: $p0;
+  }
+
+  & .themeBanner {
+    margin: $p12 $p0;
+  }
+
+  & .postImg.completeLazyLoad {
+    & img {
+      @include objfitcover;
+      height: $sizefull;
+      width: $sizefull;
+      @extend %objecpos-cc;
+    }
+  }
+
+  & .postImg.column1 {
+    & img {
+      @extend %objefit-unset;
+      height: $sizefull;
+      margin: $auto;
+      @extend %objecpos-cc;
+    }
+  }
+  /**/
+
+  & .tabIndexinline {
+    display: $block !important;
+  }
+
+  & p.horizontal_text_trim.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+
+  & p.horizontal_text_trim.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+
+  & p.horizontal_text_trim.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+
+  & p.horizontal_text_trim.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+
+  & .postCardContent {
+    .shareOptions {
+      z-index: 2;
+
+      a {
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      .shareOptions {
+        left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.themesWrapper.themeStart16 {
+  padding-bottom: $p0;
+}

@@ -1,0 +1,146 @@
+.themeStart53 .reviewHeader, .themeStart53 .reviewHeader .reviewRating, .themeStart53 .reviewHeader .reviewHeaderBrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.themeStart53 .reviewHeader, .themeStart53 .reviewHeader .reviewRating, .themeStart53 .reviewHeader .reviewHeaderBrand {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeStart53 .reviewHeader {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.themeStart53 .reviewHeader {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.themeStart53 .postCardContent p {
+  word-break: break-word; }
+
+.themeStart53 .reviewHeader {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  /**/ }
+
+.themeStart53 .reviewHeader {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+
+.themeStart53 {
+  /* & .postRating {
+    text-align: $left !important;
+  }*/
+  /**/
+  /* Hashtag highlighter trimcontent css start  */ }
+  .themeStart53 .themeWrap {
+    left: 0; }
+  .themeStart53 .postItem {
+    min-width: 100% !important; }
+  .themeStart53 .post {
+    border-radius: 12px;
+    margin: 0; }
+  .themeStart53 .postAuthor {
+    padding: 14.4px !important; }
+  .themeStart53 .postCardContent {
+    padding: 0 14.4px 17.984px; }
+    .themeStart53 .postCardContent .postedText {
+      text-align: left; }
+      .themeStart53 .postCardContent .postedText.setFont {
+        line-height: 140%; }
+  .themeStart53 .reviewHeader {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 9.6px 16px; }
+    .themeStart53 .reviewHeader .fa-google-new {
+      width: 36px;
+      height: 36px; }
+    .themeStart53 .reviewHeader .brandName {
+      font-size: 18px; }
+    .themeStart53 .reviewHeader .reviewRating span:first-child {
+      font-size: 19.84px;
+      line-height: 19.84px;
+      font-weight: 600;
+      margin-right: 8px; }
+    .themeStart53 .reviewHeader .reviewRating span:nth-child(2) {
+      margin-right: 8px; }
+    .themeStart53 .reviewHeader .reviewHeaderBrand .reviewRatingWrapper {
+      margin-left: 16px; }
+  .themeStart53 .writeReviewBtn {
+    margin-top: 16px !important; }
+  .themeStart53 pre.chtrLimits.emojiApplied {
+    background-color: transparent;
+    padding: 0; }
+  .themeStart53 p.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart53 p.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart53 p.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart53 p.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis; }
+  .themeStart53 pre.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart53 pre.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart53 pre.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart53 pre.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis; }
+
+@media (min-width: 576px) {
+  .themeStart52 .writeReviewBtn {
+    margin-top: 0 !important; } }
+@media screen and (max-width: 767px) {
+  .themeStart53 .postCardContent {
+    height: auto; } }
+
+/*# sourceMappingURL=reviewTable.css.map */

@@ -1,0 +1,148 @@
+@import "../variables.scss";
+
+.themeStart3 {
+  & .post {
+    border-radius: $p0;
+    border: $p0;
+    @extend %box-shadow3;
+    height: $sizefull;
+    margin: $p0;
+  }
+
+  & .cardPostCTA {
+    margin-top: $p0;
+    padding: 9.6px;
+  }
+
+  & .postAuthor .postNetwork {
+    top: $fs14;
+  }
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+
+
+
+
+
+  & .postContent {
+    /**/
+    height: $sizefull;
+  }
+
+  & .postContent .image {
+    height: $w260; /**/
+    height: calc(100% - 72px);
+  }
+
+  & .youtubeTagembedta .postContent .image {
+    height: $w162;
+  }
+
+  & .socialPostAction {
+    padding: $h10 $p0;
+    border-top: $bordertype1;
+    @extend %jc-spacevenly;
+    @extend %flex-wrap;
+
+    & .social-shareWrapper {
+      position: $posrel;
+    }
+    & .popover-content {
+      display: $none;
+      position: $posabs;
+      bottom: $sizefull;
+      padding: $p0;
+      padding-bottom: $h10;
+      width: $w170;
+      right: -1px;
+      z-index: $zindex6;
+
+      & .popover-content-inner {
+        position: $posrel;
+        background: $greyshade10;
+        border-radius: $p4;
+        @include boxshadow1;
+
+        &:before {
+          content: "";
+          background: $white;
+          position: $posabs;
+          bottom: -5px;
+          right: $h20;
+          width: $h10;
+          height: $h10;
+          @include roatez;
+        }
+        & a {
+          @extend %d-flex;
+          @extend %ai-center;
+          color: $white;
+          font-size: $p13;
+          font-weight: $fw4;
+          line-height: $lh1;
+          border-top: $bordertop1;
+          padding: $p12;
+          cursor: $pointer;
+          @extend %trans2s;
+          position: $posrel;
+          text-align: $left;
+
+          &:first-child {
+            border-top: $p0;
+          }
+          &:hover {
+            background: $greyshade10;
+          }
+          & i {
+            margin-right: $p7;
+          }
+        }
+      }
+      &.onlyShare {
+        left: calc(50% - 110px);
+
+        & .popover-content-inner:before {
+          right: calc(50% - 30px);
+        }
+      }
+    }
+    & a {
+      width: $auto;
+      padding: $p0 $h5;
+      font-size: $p16;
+      line-height: $p16;
+      @extend %d-flex;
+      @extend %ai-center;
+
+      & svg {
+        margin-right: $h5;
+        width: $h15;
+        height: $auto;
+      }
+
+      &:hover svg path {
+        stroke: $secondary;
+      }
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  /*--Highlighter-Post--*/
+  & .polaroid.theme3 .postContent > div.image {
+    height: calc(100% - 72px);
+  }
+}

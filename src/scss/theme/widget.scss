@@ -1,0 +1,238 @@
+@import "../variables.scss";
+
+.themeStart49 {
+  width: $sizefull;
+  height: $inherit;
+  margin: $p0 $auto;
+  position: $posrel;
+
+  &.inAppTheme {
+    max-width: $w380;
+    min-width: $w380;
+    max-height: $vh84;
+    margin-top: $vh3;
+  }
+
+  & .post {
+    border: $p0;
+    margin: $p0;
+  }
+
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  & .flatThemeCard {
+    padding-left: $p0 !important;
+    padding-right: $p0 !important;
+  }
+
+  & .theme49 {
+    padding: $p0 $p6;
+  }
+
+  & .themeWrap {
+    left: $p0;
+  }
+
+  & .cardPostCTA {
+    margin-top: $p0;
+    margin-bottom: 12.8px;
+  }
+
+  & .isCta .cardPostCTA {
+    margin-bottom: $p12;
+  }
+
+  & .postAuthor .postNetwork {
+    top: calc(50% - 11px);
+    line-height: $p0;
+  }
+
+  & .objectCard {
+    & .postAuthor {
+      position: $posabs;
+      top: $p0;
+      left: $p0;
+      width: $sizefull;
+      z-index: $zindex9;
+      @include lineargradient2;
+
+      & .postAuthorName,
+      & .authrHandle,
+      & .timePost,
+      & .sepratedot {
+        color: $white !important;
+      }
+    }
+  }
+
+  & .scrollbar-thumb {
+    background: $primary !important;
+    width: $p4 !important;
+  }
+
+  & .scrollbar-track-y {
+    top: $p0;
+    right: $p0;
+    height: $sizefull;
+    width: $p4 !important;
+  }
+
+  & .scrollbar-track-x {
+    display: $none !important;
+  }
+
+  & .socialPostAction {
+    background-color: $transparent;
+    @extend %jc-flexstart;
+    padding: $p3 $h10;
+  }
+
+  & .shareOptions {
+    position: $posabs;
+    transform: $none;
+    right: $p0;
+    bottom: $p0;
+    top: $inherit;
+    background: $transparent;
+    left: $inherit;
+    padding: $h10;
+
+    & a {
+      width: $auto;
+      height: $auto;
+      text-align: $inherit;
+      border-radius: $p0;
+      box-shadow: $none;
+      background: $transparent;
+      line-height: $p0;
+      padding: $p0 $p6;
+      transform: $none !important;
+      font-size: $inherit;
+    }
+
+    &:hover a {
+      margin: $p0 !important;
+    }
+  }
+
+  & .themeBanner.banner-2 .headerBannerMiddle,
+  & .themeBanner.banner-3 .headerbannerRight {
+    right: $h10;
+  }
+
+  & .themeBanner.banner-2 .headerBannerLeft,
+  & .themeBanner.banner-3 .headerBannerLeft,
+  & .themeBanner.banner-5 .headerBannerLeft {
+    left: $h10;
+  }
+
+  & .themeBanner.banner-2 .headBannerLogo,
+  & .themeBanner.banner-5 .headBannerLogo {
+    width: $w112;
+    @extend %d-inlineflex;
+
+    & img {
+      max-width: $sizefull !important;
+    }
+  }
+
+  & .themeBanner.banner-3 .headerBannerMiddle .headBannerHeading {
+    @extend %d-inlineflex;
+
+    h1 {
+      padding-left: $p4;
+    }
+  }
+
+  & .themeBanner.banner-3 .headerbannerRight {
+    top: $size30;
+  }
+
+  & .themeBanner.banner-4 .headerbannerRight {
+    right: $p4;
+  }
+
+  & .themeBanner.banner-4:after {
+    width: $w138;
+  }
+
+  & .themeBanner.banner-5 .headerbannerRight {
+    right: $p4;
+    top: $size36;
+  }
+
+  & .themeBanner.banner-5:before {
+    min-width: $w150;
+  }
+
+  & .themeBanner.banner-5 .headerBannerMiddle,
+  & .themeBanner.banner-3 .headerBannerMiddle {
+    left: $inherit;
+    transform: $none;
+    top: $inherit;
+    bottom: $h10;
+    right: $h10;
+  }
+
+  & .themeBanner {
+    padding: $p0 $h25;
+  }
+
+  & .poweredBy49wrap {
+    position: $posabs;
+    bottom: $p4;
+    z-index: $zindexvhigh;
+    right: $p4;
+    @extend %box-shadow2;
+  }
+
+  & .theme49_poweredByMain .loadmorebtn49 {
+    padding-bottom: $h40;
+  }
+  & .chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+  & .chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+  & .chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+  & .chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+  & .themeBanner.banner-5 .headBannerHashtag {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  & .themeBanner.banner-5 .bannerRight.withoutLearnmore {
+    height: 0px;
+  }
+  & pre.chtrLimits.emojiApplied {
+    background: $transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  .themeStart49 {
+    & .flatThemeCard {
+      left: $p0 !important;
+      width: $sizefull !important;
+    }
+  }
+}

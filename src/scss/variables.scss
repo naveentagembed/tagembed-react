@@ -1,0 +1,635 @@
+$primary: #4179ff;
+$secondary: #00e9ff;
+
+$transparent: transparent;
+$white: #fff;
+$black: #000;
+$darkgrey2: #333;
+$darkgrey: #1e2531;
+$greyshade2: #212529;
+$greyshade3: #2f353a;
+$greyshade4: #42474c;
+$greyshade5: #01071d;
+$greyshade6: #323232;
+$greyshade7: #6a6a6a;
+$greyshade8: #a2a2a2;
+$greyshade9: #6b6b6b;
+$greyshade10: #efefef;
+$skyblue: #d8e4ff;
+$blue: #007bff;
+$lighgrey: #f5f5f5;
+$lighgrey2: #eee;
+$searchyellow: #e2b95d;
+$yellowline: #cca040;
+$yellowhover: #f4d03f;
+$sharea: #404040;
+$share: #0177b5;
+
+$twshare: #1da1f2; //1
+$inshare: #c32aa3; //2
+$fbshare: #1877f2; //3
+$google: #ea4335; //4
+$pinterest: #bd081c; //5
+$flicker: #f40083; //6
+$youtube: #ff0000; //7
+$vimeo: #1ab7ea; //8
+$linkedin: #0a66c2; //10
+$tumblr: #35465d; //11
+$rss: #ee802f; //12
+$workplace: #4767ab; //15
+$instabusiness: #7232bd; //18
+$yelp: #d32323; //19;
+$slack: #4a154b; //20
+$yammer: #3d78d4; //21
+$airbnb: #ea7775; //23
+$soundcloud: #ff5500; //25
+$giphy: #7bfc9b; //26
+$capetrra: #044d80; //28
+$etsy: #f1641e; //29
+// $tiktok: ; //31
+$vk: #3a77a5; //32
+$trustpilot: #00b67a; //33
+
+$fw: FontAwesome;
+$opensans: "open sans", sans-serif;
+$uppercase: uppercase;
+$avenir: "Avenir";
+
+$posrel: relative;
+$posabs: absolute;
+$posfixed: fixed;
+$postatic: static;
+
+$hidden: hidden;
+$none: none;
+$cover: cover;
+
+$inherit: inherit;
+$center: center;
+$right: right;
+$left: left;
+$auto: auto;
+$both: both;
+$unset: unset;
+$normal: normal;
+$valigntop: top;
+$valignmiddle: middle;
+
+$lh1: 1;
+$lh2: 2;
+$lh3: 3;
+$lh5: 1.5;
+
+$block: block;
+$dinline: inline;
+$dinlineblock: inline-block;
+
+$tablecell: table-cell;
+$table: table;
+
+$norepeat: no-repeat;
+$contain: contain;
+$pointer: pointer;
+
+$fs14: 14px;
+$fs22: 22px;
+
+$fw3: 300;
+$fw4: 400;
+$fw6: 600;
+$fw7: 700;
+
+$p0: 0;
+$p1: 1px;
+$p2: 2px;
+$p3: 3px;
+$p4: 4px;
+$p6: 6px;
+$p7: 7px;
+$p8: 8px;
+$p12: 12px;
+$p13: 13px;
+$p16: 16px;
+$p18: 18px;
+$p21: 21px;
+$p24: 24px;
+$p26: 26px;
+$p28: 28px;
+$p29: 29px;
+$p32: 32px;
+$p34: 34px;
+$p36: 36px;
+$p44: 44px;
+$p46: 46px;
+$p48: 48px;
+$p52: 52px;
+$p54: 54px;
+$p56: 56px;
+$p62: 62px;
+$p64: 64px;
+$p78: 78px;
+
+$h5: 5px;
+$h10: 10px;
+$h15: 15px;
+$h20: 20px;
+$h25: 25px;
+$h30: 30px;
+$h40: 40px;
+$h50: 50px;
+$h60: 60px;
+$h70: 70px;
+$h90: 90px;
+$h220: 220px;
+
+$opacity3: 0.3;
+$opacity6: 0.6;
+$opacity7: 0.7;
+$opacity8: 0.8;
+$opacity9: 0.9;
+
+$size3: 3%;
+$size5: 5%;
+$size15: 15%;
+$size22: 22%;
+$size30: 30%;
+$size36: 36%;
+$size40: 40%;
+$sizehalf: 50%;
+$size53: 53%;
+$size60: 60%;
+$size66: 66%;
+$size70: 70%;
+$size80: 80%;
+$size94: 94%;
+$size96: 96%;
+$sizefull: 100%;
+$size112: 112%;
+$size125: 125%;
+$size140: 140%;
+
+$vw92: 92vw;
+$vwfull: 100vw;
+
+$vh3: 3vh;
+$vh70: 70vh;
+$vh84: 84vh;
+$vh100: 100vh;
+
+$w112: 112px;
+$w120: 120px;
+$w136: 136px;
+$w138: 138px;
+$w150: 150px;
+$w160: 160px;
+$w162: 162px;
+$w164: 164px;
+$w170: 170px;
+$w176: 176px;
+$w180: 180px;
+$w200: 200px;
+$w210: 210px;
+$w230: 230px;
+$w244: 244px;
+$w245: 245px;
+$w248: 248px;
+$w250: 250px;
+$w260: 260px;
+$w280: 280px;
+$w290: 290px;
+$w300: 300px;
+$w310: 310px;
+$w374: 374px;
+$w380: 380px;
+$w400: 400px;
+$w420: 420px;
+$w460: 460px;
+$w480: 480px;
+$w500: 500px;
+$w510: 510px;
+$w559: 559px;
+$w600: 600px;
+$w680: 680px;
+$w800: 800px;
+$w810: 810px;
+$wfull: 9999999px;
+
+$bordertype1: 1px solid #e0f0f1;
+$bordertype2: 2px solid red;
+$bordertype3: 1px solid;
+$bordertype4: 2px solid;
+$bordertop: 1px solid #42474c;
+$bordertop1: 1px solid #e7e7e7;
+
+$radius32: 3.2px;
+
+$caselower: lowercase;
+
+$zindex6: 6;
+$zindex8: 8;
+$zindex9: 9;
+$zindex10: 10;
+$zindex50: 50;
+$zindexbasic: 999;
+$zindexbasic1: 95;
+$zindexmid: 9999;
+$zindexhigh: 99999;
+$zindexvhigh: 999999;
+$zindexvvhigh: 99999999;
+$zindex1040: 1040;
+$zindex1050: 1050;
+$bg-clipx: padding-box;
+
+$em2: 2em;
+$em24: 2.4em;
+
+$rem05: 0.5rem;
+$rem08: 0.8rem;
+$rem85: 0.85rem;
+$rem1: 1rem;
+
+$blur5: blur(5px);
+$blur12: blur(12px);
+
+%d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+%ai-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+%ai-flexend {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+%jc-flexend {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+%jc-flexstart {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+%jc-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+%jc-spacevenly {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+%jc-spacebetween {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+%flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+%fd-column {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+%fd-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+%translateY50 {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+%translateX50 {
+  transform: translateX(-50%);
+}
+%translateY55 {
+  transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  -webkit-transform: translateY(-55%);
+}
+
+%translateX100 {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+%translateY100 {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+%translateXzero {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+%modalTranslate {
+  -webkit-transform: translate(0, -50px);
+  -ms-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+
+%translateX32 {
+  -webkit-transform: translateX(-32px);
+  -ms-transform: translateX(-32px);
+  transform: translateX(-32px);
+}
+%translateX64 {
+  -webkit-transform: translateX(-64px);
+  -ms-transform: translateX(-64px);
+  transform: translateX(-64px);
+}
+%translateX96 {
+  -webkit-transform: translateX(-96px);
+  -ms-transform: translateX(-96px);
+  transform: translateX(-96px);
+}
+%tranformnone {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+%wordbreak {
+  word-break: break-word;
+}
+%trans1s {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+%trans2s {
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+%trans3s {
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+%trans5s {
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+%trans8s {
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+}
+
+%box-sizingbx {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+%radiuszero {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+%box-shadow {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.61);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.61);
+}
+%box-shadow2 {
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+}
+%box-shadow3 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); /**/
+}
+%box-shadow3 {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+%width-stretch {
+  width: -webkit-fill-available;
+  width: stretch;
+  width: -moz-available;
+}
+%d-inlineflex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+%text-shadow42 {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+}
+%objecpos-cc {
+  -o-object-position: center center;
+  object-position: center center;
+}
+%objefit-unset {
+  -o-object-fit: unset;
+  object-fit: unset;
+}
+%objectfit-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+%box-shadownone {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+%transition4s {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+%lineclamp9 {
+  -webkit-line-clamp: 9;
+  line-clamp: 9;
+}
+%lineclamp6 {
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+}
+%modalFade {
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+%mincontent {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+%invert1 {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+%backface-visibility {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@mixin poweredby {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin rotate180 {
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+}
+@mixin rotate180plus {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+@mixin bg-opacity4 {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@mixin bg-opacity6 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@mixin bg-opacity7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@mixin scale1 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+@mixin scale11 {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@mixin scale05 {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+@mixin scale07 {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
+@mixin scale09 {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+@mixin objfitcover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@mixin user-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@mixin button-trans {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+@mixin postboxshadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+}
+@mixin postboxshadow30 {
+  box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+  -webkit-box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(120, 120, 120, 0.3);
+}
+@mixin boxshadow2 {
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+@mixin boxshadow1 {
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+@mixin roatez {
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+}
+@mixin lineclamp3 {
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+@mixin lineclamp4 {
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+}
+@mixin lineclamp7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//new code for LineTrim Start
+
+@mixin lineclamp2 {
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+@mixin lineclamp5 {
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  text-overflow: ellipsis;
+}
+
+//new code for LineTrim End
+
+@mixin lineargradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.79)), to(rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0));
+}
+@mixin lineargradient2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0.6)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(2, 0, 36, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+}
+@mixin fgrow2 {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}

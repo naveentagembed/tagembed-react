@@ -1,0 +1,464 @@
+	/*
+React 14-09-21
+
+onErrorImg - url changed from 
+let onErrorImg = 'https://app.tagembed.com/img/author2.png';
+to
+let onErrorImg = `https://ui-avatars.com/api/?name=${item.author.username}&background=123&color=fff&rounded=true&length=1` 
+
+theme.scss line:154 - Remove quote's when post data not appear
+
+Removed unwanted code
+
+Post Renewal code updated
+
+Popup and Direct to Source Updated
+_________________________________________________________________________________________________________________________________________
+
+React 24-09-21
+Sound cloud - used iFrame in mediapost.js for sound cloud 
+
+Post expire update - removed Post_Img_Renew and directly called dataUpdate 
+
+Subtracted value 1 from windowWidth in each theme to make it more responsive 
+_________________________________________________________________________________________________________________________________________
+
+React 30-09-21
+classic carousal slack emoji issue - fixed by using contentConversion file
+
+Horizontal carousal 1 column - changed css when columnCount === 1
+
+polaroid mobile view issue - fixed by setting height and width on cardpost
+_________________________________________________________________________________________________________________________________________
+
+React 15-10-21
+
+vimeo css - popup(in app + widget-modal) and normal 
+youtube css - popup(in app + widget-modal) and normal 
+Review box trim content issue
+review carousal - readmore button 
+removed unused keys from themes - optimization
+added skeleton 
+removed loader spinner 
+removed shareoptions from sound cloud
+_________________________________________________________________________________________________________________________________________
+
+React 17-11-21
+
+Slack icon updated - using helmet library
+popup icons updated
+gzip compression - updated webpack ; react dom ; web-vitals
+iframe for vk added in mediapost.js / popup.js ( inner ), popup.js( outer )
+popup side bar css updated
+backgroundblur image added in popup.js
+_________________________________________________________________________________________________________________________________________
+
+React 18-11-21
+
+updated theme > index.js file with old code removed lazy and suspense
+_________________________________________________________________________________________________________________________________________
+
+React 22-11-21
+
+updated caraousal slick slider : changed code for infinite loop which mis making duplicate slides.
+_________________________________________________________________________________________________________________________________________
+
+React 26-11-21
+
+used google font family.
+changed height and width for tiktok popup
+removed image skeleton from mediapost
+horizontal slider arror issue
+
+_________________________________________________________________________________________________________________________________________
+
+React 30-11-21
+
+changed google font template string
+_________________________________________________________________________________________________________________________________________
+
+React 06-12-21
+
+slider carousel theme
+_________________________________________________________________________________________________________________________________________
+
+React 07-12-21
+
+resize-observer install function applied in app.js
+slider carousel post count 
+_________________________________________________________________________________________________________________________________________
+
+React 15-12-21
+
+applied responsive height width in slider theme after fetching it on load
+Removed options from masonry component for fast processing and optimisation
+_________________________________________________________________________________________________________________________________________
+
+React 20-12-21
+
+added web filter single append
+added event listener for slider popup close event
+added update expire post request on popup
+changed slider auto slide count as per responsive
+added case 'slickPlay' in embed min js 
+
+_________________________________________________________________________________________________________________________________________
+
+React 04-01-22
+
+added class trim content true in classic carousal
+_________________________________________________________________________________________________________________________________________
+
+React 04-01-22
+
+added class trim content true in classic carousal
+_________________________________________________________________________________________________________________________________________
+
+React 12-01-22
+
+added animation={false} in popup.js
+_________________________________________________________________________________________________________________________________________
+
+React 16-01-22
+
+api end point optimised
+tiktok popup added for hashtag
+_________________________________________________________________________________________________________________________________________
+
+React 28-02-22
+
+added loader data condition in theme action file
+optimised code and react libraries
+masonry theme load - added transistion option in masonry tag
+_________________________________________________________________________________________________________________________________________
+
+React 08-03-22
+
+changes min height settings in app.js for iframe
+added loaderdata option in themeactions for two rows
+added two rows option in horizontal carousel
+_________________________________________________________________________________________________________________________________________
+
+React 11-03-22
+
+changed youtube video height width in popoup.js
+added story slider theme
+_________________________________________________________________________________________________________________________________________
+
+React 24-03-22
+
+two rows option for slider carousel
+solved rerendering of posts from mediapost.js
+_________________________________________________________________________________________________________________________________________
+
+Deependra
+React 07-04-22
+
+min-height remove for slider theme in slider.js 
+_________________________________________________________________________________________________________________________________________
+
+
+React 08-04-22
+
+video tag autoplay set to false  in mediaPost.js
+widget-modal ReactPlayer  autoplay and muted condition given in popup.js
+_________________________________________________________________________________________________________________________________________
+
+
+React 12-04-22
+
+Story theme live on main server.
+ReactPlayer css is given in widget modal pop.scss due to client issue 
+__________________________________________________________________________________________________________________
+
+React 13-04-22
+
+mediaPost.js line no 131 minHeight remove on a trail basis
+Story theme slider.js file video tag enable controls and css given for mediaquery & postImg class in storyslider.scss
+
+__________________________________________________________________________________________________________________
+
+React 14-04-22
+
+widget modal pop for tiktok getting issue related to video play so reactplayer controls added for tiktok in popup.js.
+vimeo video not able to open on full width on client side so height css commented in popup.scss.
+
+
+__________________________________________________________________________________________________________________
+
+React 28-04-22
+
+Widget modal popup for insta video expiry post getting width issue so corrected that width.
+progressive image implemented in all themes except sq.space, polaroid, gallery theme and changes done in all theme index.js file and mediapost.js file.
+
+
+__________________________________________________________________________________________________________________
+
+React 03-05-22
+
+Widget modal popup tiktok video issue and images width issue for that extra css given.
+
+
+__________________________________________________________________________________________________________________
+
+React 04-05-22
+
+slider-carousel theme height calculation changes and changes done in slider.js file.
+now post able to seen with post height and width. 
+
+
+__________________________________________________________________________________________________________________
+
+React 06-05-22
+
+wall.themerule.fontsize changed to wall.themerule.fontSize in all themes cardpost index.js file and and on popup index.js file in React-Theme file.
+widget modal popup fontsize is called and fontsize is now working for widget modal popup also.
+
+
+__________________________________________________________________________________________________________________
+
+React 09-05-22
+
+
+Story theme is live now and story theme code added in react theme files.
+
+
+__________________________________________________________________________________________________________________
+
+React 13-05-22
+
+tiktok icon is updated in webfilters.jsfor that condition is given.for that css is also given.
+For reviewbox theme in contentpostconversion.js file item.content key is replace with item.fullcontent.
+In horizontalcarousel slider.js file height calc replace with 400px to 350px.
+
+
+__________________________________________________________________________________________________________________
+
+React 18-05-22
+
+progressive image concept code commented from mediapost.js and all slider themes slider.js files.
+
+__________________________________________________________________________________________________________________
+
+React 20-05-22
+
+trim content condition is applied inside cardpost folder index.js file.
+
+trim content condition css is given in modernfall, snapcard and classic fall theme css given in their respective scss file.
+
+Story theme width issue resolved and changes done in respective scss file only.
+
+video expiry post not getting wall id so wall id is given in data-wall-id in feature popup.js file.
+
+
+__________________________________________________________________________________________________________________
+
+React 25-05-22
+
+
+slider carousel slider.js file slidesToShow attribute set to 6 above 1400 breakpoint and below set to 4.
+
+story theme mobile responsiveness is done for use along with bannerimage.
+
+
+__________________________________________________________________________________________________________________
+
+React 26-05-22
+
+trim content condition is applied inside cardpost folder index.js file and inline style for height is given.
+
+
+__________________________________________________________________________________________________________________
+
+React 06-06-22
+
+carousel post on popup is done for feature popup and widget modal popup for that feature popup index.js file inside popup folder & its css file is modified
+and for widget modal popup its popup.js file and its css file is modified.
+
+for multicarousel icon in mediapost.js condition is given for it and in themes.scss its respective css is written.
+
+for expiry post inside utils folder index.js file condition is given for it.and some changes done in popup folder index.js.
+
+expiry post for widget modal popup condition is given in popup.js file.
+
+   
+
+__________________________________________________________________________________________________________________
+
+React 07-06-22
+ 
+
+for expiry post plan id is not given in all carousel themes for widget modal popup for that inside cardpost folder index.js file for both popup 
+themeRule,userDetail, wall is given and widget modal popup.js file pass these values inside it.
+
+__________________________________________________________________________________________________________________
+
+
+React 09-06-22
+ 
+
+for all carousel posts multicarousel icon is implemented  and condition implemented in respective slider.js file.
+wall id is missing in feature popup expiry post for all sliders theme so wall id is pass in respective slider.js files.
+
+
+__________________________________________________________________________________________________________________
+
+
+React 10-06-22
+
+webfilters icon for etsy and trustpilot is fixed and changed done in filters.scss and variable.scss.
+
+
+
+__________________________________________________________________________________________________________________
+
+
+React 28-06-22
+
+
+inside content wrapper modalOnlyContent class having style related to height commented due to widget modal popup image resize issue.
+
+inside widget modal popup css is given for linkedin video width issue for mobile view popup.
+
+
+__________________________________________________________________________________________________________________
+
+
+React 05-07-22
+
+
+poweredBy banner css is given in squarespace.scss & variable.scss to shift it in right side for wall id 3224
+
+for expiry post on react theme & widget modal popup for that second image onError event is commented.
+
+for Google banner condition given in postDataReducer.js and themebenner index.js file and middleBanner.js.
+for Google Banner css is given in themeBanner.scss.
+
+
+__________________________________________________________________________________________________________________
+
+
+React 08-07-22
+
+
+expiry post url change in utils folder index.js file and widget modal popup.js file.
+CTA button is live for story theme where changes done in slider.js and storyslider.scss file.
+
+
+
+__________________________________________________________________________________________________________________
+
+
+React 05-08-22
+
+
+aspect ratio and card style(text alignment, line trim, card curve) launched and changes done in mediapost.js file 
+and all carousels theme slider.js files  and there respective scss file. 
+
+__________________________________________________________________________________________________________________
+
+React 24-08-22
+
+expiry post for video is launched on widget modal popup for that changes done in widget modal popup.js file only.
+
+
+__________________________________________________________________________________________________________________
+
+React 08-09-22
+
+1.) card style share option is given in gallery,list view,review box,horizontal,review, 
+and classic carousel for that respective slider.js and cardpost index.js fine modified.
+
+2.) story theme slider.js file 1300 breakpoint slideto show set as five.
+
+3.) expiry post for card while popup is off and given condition for 4 themes(modern fall,snap card,classic fall,widget theme)
+for that changes done in utils folder index.js and mediapost.js file.
+
+4.) show more color issue for gallery and sq.space theme and for that changes done in showmore.js file in button tag.
+
+5.) pointer on hover on card while direct to source is off for that changes done in all themes slider.js file nad mediapost.js file.
+
+6.) gallery theme cardspacing and card-curve is given for that changes done in mediapost.js and gallery.scss.
+
+7.) Api url changes as first request goes to json api then if cache exist then ok else it will fall to wallurl api.
+__________________________________________________________________________________________________________________
+
+React 13-09-22
+
+1.) Api url change back to normal wallurl api, we delete that cache request url due to issue from backend side.
+
+
+__________________________________________________________________________________________________________________
+
+React 28-09-22
+
+1.) aspect ratio condition change from old key(aspectratio) to new key(aspectimageratio)in mediapost.js and cardpost index.js file and all carousel theme slider.js files.
+
+2.) slider theme arrow overlap so changes done in slider.scss file for arror z-index value.
+
+3.) carousel text is overlapping through author detail so changes done in classiccarousel.scss on line no 346
+
+
+__________________________________________________________________________________________________________________
+
+React 09-11-22
+
+1.) carousel post multipost icon path is updated as before icon come from beta url now deleted beta path from slider.js files and mediapost.js.
+
+
+__________________________________________________________________________________________________________________
+
+React 10-11-22
+
+1.) lite + iframe build is live and changes done in mostly utils index.js and app.js and themeaction.js and new reducer build and its respective changes done.
+
+
+__________________________________________________________________________________________________________________
+
+React 16-11-22
+
+1.) meta title is coming on users website, because in lite we can not pass meta title so commented PageHeadSection component in all theme index.js files.
+
+
+__________________________________________________________________________________________________________________
+
+React 17-11-22
+
+1.) custom css is not able to work so inside PageHeadSection component apply custom css condition.
+
+
+__________________________________________________________________________________________________________________
+
+React 17-11-22
+
+1.) gallery theme big post image condition is corrected in cardpost index.js file in height and min- height.
+
+2.) slider carousel theme left right arrrow opacity is increase so respctive change done in slidercarousel.scss.
+
+3.) for type 5 post blank image path issue so that its path change and aspectratio condition is also applied along with height and width in slidercarousel, horizontal carousel, 
+    storytheme and mediapost.js files.
+
+4.) all images,icon and script and style path is change from app.tagembed.com to cdn.tagembed.com .
+
+5.) css as per lite code is applied in all theme respective  .scss  style files.
+
+6.) viewon text condition on popup(feature and widget modal popup) in SocialPanel function is removed, due to language converion issue, once resolve from backend then will revert it back.
+
+
+
+__________________________________________________________________________________________________________________
+
+React 20-02-22
+
+1.) changes done all theme scss files due to changes done js code requirement.
+
+2.) changes done in popup index.js and its popup.scss when popup change to big like instagram. 
+
+3.) changes done in mediapost.js and utils index.js file and all slider theme slider.js file when we add attribute feedId.
+
+
+
+
+
+
+*/

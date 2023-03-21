@@ -1,0 +1,1329 @@
+@import "../../scss/variables.scss";
+
+/* DEFAULT */
+*,
+::after,
+::before {
+  @extend %box-sizingbx;
+}
+
+.modalOnlyContent {
+  &::-webkit-scrollbar {
+    width: $p3;
+    height: $p6;
+    background-color: $lighgrey;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $lighgrey2;
+    border-radius: $p0;
+    -moz-border-radius: $p0;
+    -webkit-border-radius: $p0;
+  }
+}
+
+#tagembedModal:focus,
+.modal-content:focus,
+.modalWrapper:focus {
+  border: $p0;
+  @extend %box-shadownone;
+  outline: $none;
+}
+
+.modal-backdrop {
+  position: $posfixed;
+  top: $p0;
+  left: $p0;
+  z-index: $zindex1040;
+  width: $vwfull;
+  height: $vh100;
+  background: $greyshade5;
+
+  &.show {
+    opacity: $opacity7;
+    display: $block;
+  }
+
+  &.fade {
+    opacity: $p0;
+  }
+}
+
+.tagembedModal {
+  img {
+    vertical-align: $valignmiddle;
+    border-style: $none;
+  }
+
+  a {
+    text-decoration: $none;
+  }
+
+  .rating {
+    margin-bottom: $rem05;
+    text-align: $center;
+  }
+
+  /*-- Video-hight-fixed --*/
+  #video>video {
+    max-height: $w559;
+    object-fit: $cover;
+  }
+
+  i.fa-facebook-f:before {
+    content: "\f39e";
+  }
+}
+
+/* MODAL */
+.modal-open {
+  .tagembedModal {
+    &.modal {
+      display: -webkit-box !important;
+      display: -moz-box !important;
+      display: -ms-box !important;
+      border-radius: $inherit;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-box-align: center;
+      /* added due to client issue*/
+      opacity: 1;
+    }
+
+    /* after first modification */
+    .modal-dialog {
+      pointer-events: auto;
+    }
+  }
+}
+
+.tagembedModal {
+  &.modal {
+    position: $posfixed;
+    top: $p0;
+    left: $p0;
+    z-index: $zindexvvhigh;
+    display: $none;
+    width: $sizefull;
+    height: $sizefull;
+    overflow: $hidden;
+    outline: $p0;
+    visibility: $inherit;
+  }
+
+  &.fade {
+    @extend %modalFade;
+
+    .modal-dialog {
+      @extend %trans3s;
+      @extend %modalTranslate;
+    }
+  }
+
+  &.show {
+    .modal-dialog {
+      @extend %tranformnone;
+    }
+  }
+
+  .modal-dialog {
+    position: $posrel;
+    width: $auto;
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: 100vh;
+    max-width: 90%;
+  }
+
+  .modal-content {
+    position: $posrel;
+    display: flex;
+    flex-direction: column;
+    width: $sizefull;
+    pointer-events: $auto;
+    background-color: transparent;
+    background-clip: padding-box;
+    border-radius: $p0;
+    outline: $p0;
+    height: $sizefull;
+    border: $p0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &.modal-text-image-vimeo-youtube {
+    .modal-dialog {
+      width: 100%;
+    }
+
+    .iframeVideo {
+      &.imageCardN7 {
+        width: 100% !important;
+
+        .ReactPlayer {
+          width: 100% !important;
+        }
+
+        .ReactPlayer>div {
+          width: 100% !important;
+        }
+      }
+
+      &.imageCardN8 {
+        width: 100% !important;
+
+        .ReactPlayer {
+          width: 100% !important;
+        }
+
+        .ReactPlayer>div {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .tagembedImageWrapper {
+    border: $p0;
+    margin: 0 auto;
+    width: $auto;
+    background-color: black;
+    display: flex;
+    height: $sizefull;
+
+    &.iframeVideo {
+      width: 500px !important;
+
+      .ReactPlayer {
+        width: 500px !important;
+      }
+
+      .ReactPlayer>div {
+        width: 500px !important;
+      }
+
+
+    }
+
+    &.videoPost {
+      width: 500px !important;
+
+    }
+
+    iframe {
+      width: $sizefull;
+      height: $sizefull;
+      display: $block;
+      border: $none;
+    }
+
+    video {
+      width: $sizefull;
+      height: $sizefull;
+      display: $block;
+      border: $none;
+    }
+
+
+  }
+
+  .tagembedContentWrapper {
+    position: $posrel;
+    right: $p0;
+    top: $p0;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #eee;
+    height: $sizefull;
+  }
+
+  .modalOnlyContent {
+    max-height: $sizefull;
+    overflow-y: $auto;
+    overflow-x: $hidden;
+    margin-top: $p0;
+    flex-grow: 2;
+    padding: 15px;
+
+    p {
+      margin: $p0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* after first modification */
+    .rating {
+      display: block;
+    }
+  }
+
+  .modalWrapper {
+    height: $sizefull;
+    display: flex;
+    justify-content: $center;
+    padding: 0px 35px;
+  }
+
+  //TikTok
+
+  &.tiktopPopupwrap {
+    align-items: center;
+
+    .modal-content {
+      height: auto;
+      box-shadow: none;
+    }
+
+    #tagembedPopup {
+      border-radius: 0;
+      align-items: center;
+    }
+
+    .imageCardN31 {
+      /* min-width: 600px; */
+      border-radius: 0;
+      width: 325px !important;
+      height: 575px;
+      margin: auto;
+    }
+
+    .tiktok-embed {
+      margin: 0px;
+      overflow: hidden;
+      overflow-y: auto;
+
+      section {
+        display: none !important;
+      }
+    }
+  }
+}
+
+//modal-text-image
+.modal-text-image {
+  .tagembedImageWrapper {
+    img {
+      @extend %objectfit-contain;
+      width: $sizefull;
+    }
+  }
+
+  .socialPanel {
+    padding-top: 12.8px;
+    position: $posabs;
+    bottom: $p18;
+    right: $p16;
+    left: $h20;
+    border-top: $bordertype3 $lighgrey2;
+  }
+
+  .slick-slide {
+    .tagembedImageWrapper {
+      width: 100% !important;
+
+      .ReactPlayer {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .modalWrapper {
+    .tagembedContentWrapper {
+      .socialPanel {
+        border-top: $bordertype3 $lighgrey2;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        position: $unset;
+        @extend %jc-spacebetween;
+        padding: $rem08 $rem08 $rem08;
+      }
+    }
+  }
+}
+
+//modal-only-text
+.modal-only-text {
+  .modal-dialog {
+    &.modal-dialog-centered {
+      max-width: 1080px;
+      width: $sizefull;
+      align-items: $center;
+    }
+  }
+
+  .tagembedImageWrapper {
+    display: none !important;
+  }
+
+  .tagembedContentWrapper {
+    width: $sizefull;
+    max-width: $inherit;
+    min-width: $inherit;
+    height: $auto;
+  }
+
+  .modalOnlyContent {
+    height: $auto;
+
+    .setFont {
+      width: $sizefull !important;
+      display: $block;
+      position: $postatic;
+      @extend %tranformnone;
+      font-size: $h25;
+    }
+  }
+
+  .modal-content {
+    height: $auto;
+  }
+
+  .postAuthorWrapper {
+    padding: 0.85rem;
+    border-bottom: $bordertype3 $lighgrey2;
+  }
+}
+
+//modal-only-image
+.tagembedModal {
+  &.modal-only-image {
+    .tagembedImageWrapper {
+      height: calc(100% - 124px);
+      flex-grow: 1;
+
+      &.imageCardN31 {
+        iframe {
+          max-height: 100% !important;
+        }
+      }
+    }
+
+    .tagembedContentWrapper {
+      height: $auto;
+      width: $sizefull;
+      max-width: $sizefull;
+      min-width: $sizefull;
+    }
+
+    .modalWrapper {
+      flex-direction: column;
+      align-items: stretch;
+
+      .slick-slider {
+        height: calc(100% - 124px);
+        flex-grow: 1;
+
+        .tagembedImageWrapper {
+          &.iframeVideo {
+            width: 100% !important;
+
+            .ReactPlayer {
+              width: 100% !important;
+
+              div {
+                width: 100% !important;
+              }
+            }
+          }
+
+          &.videoPost {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.setFont {
+  @extend %wordbreak;
+  font-size: $fs14;
+  line-height: $size125;
+  color: $greyshade6;
+
+  h1 {
+    font-weight: $fw7;
+    font-size: $inherit !important;
+    font-family: $inherit;
+  }
+}
+
+.socialPanel {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  border-top: $bordertype3 #eee;
+  @extend %ai-center;
+  @extend %jc-spacebetween;
+  padding: $rem08 $rem85 $rem85;
+}
+
+/* POST CONTENT */
+.socialIconPanel {
+  a {
+    display: $dinlineblock;
+    font-size: $p16;
+    color: $greyshade7;
+    margin-left: $fs14;
+    @extend %trans3s;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:first-child {
+      margin-left: $p0;
+    }
+  }
+}
+
+.popupSocialLink {
+  font-size: $fs14;
+  font-weight: $fw4;
+  color: $greyshade8;
+  line-height: $p0;
+  @extend %trans3s;
+}
+
+.postAuthorWrapper {
+  position: $posrel;
+  font-family: $opensans;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  @extend %ai-center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  @extend %jc-spacebetween;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+
+  .postAuthorDetails {
+    padding-left: $h10;
+    width: calc(100% - 70px);
+
+    .postAuthorShort {
+      font-size: $size66;
+      line-height: $p18;
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      align-items: center !important;
+    }
+  }
+
+  .postAuthorName {
+    font-size: $fs14;
+    font-weight: $fw6;
+  }
+
+  .postAuthorImage {
+    width: $p48;
+    height: $p48;
+    border: $bordertype3 rgba(0, 0, 0, 0.18);
+  }
+
+  .postNetwork {
+    font-size: $p12;
+
+    .fa {
+      font-size: $em2;
+    }
+
+    .fa.fa-capterra {
+      font-size: $em24;
+    }
+  }
+
+  .postAuthorHandle {
+    max-width: $size53;
+    font-weight: $fw6;
+  }
+
+  .sepratedot {
+    line-height: $p0;
+    margin: $p0 $p6;
+
+    svg {
+      width: $p4;
+      height: $p4;
+    }
+  }
+}
+
+/* ARROWS */
+.popArrowSlide {
+  display: $dinlineblock;
+  width: $sizefull;
+  position: $posfixed;
+  top: $sizehalf;
+  left: $p0;
+  height: $p0;
+  margin: 0 auto;
+  right: $p0;
+  z-index: 99999999;
+  transform: translateY(-50%);
+}
+
+.slideBtn {
+  width: $p48;
+  height: $p48;
+  position: $posabs;
+  z-index: $zindexmid;
+  color: $white;
+  top: calc(50% - 24px);
+  display: $dinlineblock;
+  padding: $p8;
+  width: $auto;
+  text-align: $center;
+  height: $auto;
+  @extend %trans3s;
+  border-left: $bordertype3 $transparent;
+  background: rgba(0, 0, 0, 0.14);
+
+  &.nextBtn {
+    right: 15px;
+  }
+
+  &.preBtn {
+    left: 15px;
+    @include rotate180plus;
+  }
+
+  img {
+    max-width: $sizefull;
+    opacity: $opacity8;
+    @extend %trans3s;
+    width: $h30;
+    height: $h30;
+
+    &:hover {
+      opacity: $lh1;
+    }
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.53);
+  }
+}
+
+/* CLOSE */
+.modalCloseWrapper {
+  right: $p0;
+  top: $p0;
+  position: $posabs;
+  height: $h30;
+  width: $h30;
+  background: $p0 $p0;
+  z-index: $zindex50;
+
+  .modalClose {
+    @extend %trans3s;
+    opacity: $lh1;
+    margin: $p0;
+    width: $inherit;
+    height: $inherit;
+    background-image: url(https://cdn.tagembed.com/app/img/popup-close.svg) !important;
+    background-position: $center $center;
+    background-repeat: $norepeat;
+    background-size: $h20 $h20;
+    border: $p0;
+    background-color: $transparent;
+    @extend %trans2s;
+    cursor: $pointer;
+
+    &:hover {
+      @include scale05;
+    }
+
+    &:focus {
+      @extend %box-shadownone;
+      border: $p0;
+      outline: $none;
+    }
+  }
+}
+
+.popupSocialButton {
+  color: $greyshade9;
+  text-decoration: $none;
+  @extend %trans3s;
+  font-size: $fs14;
+
+  &:hover {
+    text-decoration: $none;
+  }
+}
+
+/* ON MOBILE */
+.onMobileContent {
+  padding-top: 50px;
+
+  &.tiktopPopupwrap {
+    .modal-content {
+      height: 100%;
+    }
+  }
+
+  /* after first modification */
+  &.tagembedModal.modal {
+    z-index: 999999;
+  }
+
+  .topNav {
+    position: $posfixed;
+    top: $p0;
+    left: $p0;
+    z-index: 99;
+    width: $sizefull;
+    background: #fff;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #f3f2f2;
+  }
+
+  .slideBtn {
+    z-index: 9999;
+    position: $posrel;
+    top: $p0;
+    right: $p0;
+    bottom: $p0;
+    left: $p0;
+    padding: $p0;
+    background: #f1f1f1;
+    border: $none;
+    width: 30px;
+    display: flex;
+    justify-content: $center;
+    align-items: $center;
+    margin-right: 5px;
+
+    img {
+      width: 20px;
+      opacity: 1;
+      height: 20px;
+      filter: brightness(0.1);
+    }
+  }
+
+  .modalCloseWrapper {
+    position: $posrel;
+    top: $p0;
+    right: $p0;
+    bottom: $p0;
+    left: $p0;
+    background: #f1f1f1;
+    border: $none;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    padding: $p0;
+    margin-left: $auto;
+
+    .modalClose {
+      background-size: 12px;
+      width: $sizefull;
+      height: $sizefull;
+      filter: brightness(0.1);
+    }
+  }
+
+  .modal-dialog {
+    margin: 0 auto;
+    width: $sizefull;
+    padding: $p0;
+    max-width: 100% !important;
+    height: $sizefull;
+    overflow-x: $hidden;
+    overflow-y: $auto;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .modalWrapper {
+    padding-right: $p0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: normal;
+    padding-left: $p0;
+  }
+
+  .tagembedImageWrapper {
+    margin: $p0;
+    width: 100% !important;
+
+    iframe {
+      width: $sizefull;
+      min-height: $auto;
+      min-width: $sizefull;
+    }
+
+    &.iframeVideo {
+      width: 100% !important;
+
+      .ReactPlayer {
+        width: 100% !important;
+      }
+
+      .ReactPlayer>div {
+        width: 100% !important;
+      }
+    }
+
+  }
+
+  .tagembedContentWrapper {
+    max-width: $sizefull;
+    min-width: $sizefull;
+    width: $sizefull;
+    border: $none;
+  }
+
+  .modalOnlyContent {
+    height: $auto;
+    margin-bottom: 30px;
+  }
+
+  &.modal-text-image {
+    .slick-slide {
+      .tagembedImageWrapper {
+        height: 450px;
+        width: $sizefull;
+      }
+    }
+
+    .tagembedImageWrapper {
+      &.imageCardN7 {
+        height: 500px !important;
+        min-height: 500px;
+      }
+
+      &.imageCardN8 {
+        height: 244px !important;
+        min-height: 244px;
+      }
+    }
+  }
+
+  .popupBlurimg {
+    min-width: $sizefull;
+  }
+
+  .tiktok-embed {
+    padding: 10px 0;
+  }
+
+  &.tiktopPopupwrap {
+    .imageCardN31 {
+      height: 100%;
+    }
+  }
+}
+
+/*-- readmore-for-popup --*/
+a.morelink {
+  display: $dinlineblock;
+}
+
+a.lesslink {
+  display: $block;
+}
+
+/*Blur background Img*/
+.popupBlurimg {
+  position: $posrel;
+  overflow: $hidden;
+  background-color: transparent;
+  width: $sizefull;
+  height: $sizefull;
+  display: flex;
+  justify-content: $center;
+  align-items: $center;
+  min-width: 500px;
+}
+
+.popupBlurimg>img:first-child {
+  z-index: 9;
+  max-height: $sizefull;
+  max-width: 100% !important;
+  object-fit: contain;
+  transition: $none;
+  display: $block;
+  position: $posrel;
+  left: $p0;
+  margin: $auto;
+}
+
+.popupBlurimg>img+img {
+  background-size: cover;
+  filter: blur(12px);
+  height: $sizefull;
+  object-fit: cover !important;
+  position: absolute;
+  top: $p0;
+  z-index: 8;
+  width: $sizefull;
+}
+
+.tiktopPopupwrap.modal .modal-content {
+  width: $auto;
+}
+
+.socialPanel i {
+  color: $inherit;
+}
+
+/*-- Css For Carousel Popup --*/
+.modalWrapper {
+  .slick-slider {
+    width: 727px;
+
+    .slick-list {
+      height: $sizefull;
+
+      * {
+        height: $sizefull;
+      }
+    }
+
+    .slick-arrow {
+      width: 30px;
+      height: 30px;
+      border-radius: $sizehalf;
+      background-color: #fff !important;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      z-index: 1;
+
+      &:before {
+        content: "";
+        background-image: url(https://cdn.tagembed.com/app/img/slider-right.svg);
+        background-repeat: no-repeat !important;
+        background-size: 16px;
+        background-position: $center;
+        filter: brightness(0.5);
+        display: $block;
+        width: $sizefull;
+        height: $sizefull;
+      }
+
+      &.slick-disabled {
+        display: none !important;
+      }
+    }
+
+    .slick-prev {
+      left: 10px;
+
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
+    .slick-dots {
+      bottom: 15px;
+
+      li {
+        width: $auto;
+        margin: 0 3px;
+
+        button {
+          width: 14px;
+          height: 14px;
+          padding: $p0;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.11), 0 5px 14px rgba(0, 0, 0, 0.04);
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &.slick-active {
+          button {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.popupBlurimg {
+  -webkit-animation: fadeInAnimation 1s ease;
+  animation: fadeInAnimation 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .tagembedModal .tagembedContentWrapper {
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  .modal-text-image .popupBlurimg {
+    min-width: 400px;
+  }
+
+  .modalWrapper .slick-slider {
+    width: 400px;
+  }
+
+  .slick-slider .popupBlurimg {
+    min-width: 100%;
+  }
+
+  .modal-only-text .modal-dialog.modal-dialog-centered {
+    max-width: 870px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .modal-only-text .tagembedContentWrapper {
+    width: 100%;
+    max-width: inherit;
+    min-width: inherit;
+    height: auto;
+  }
+
+  .tagembedImageWrapper.iframeVideo .ReactPlayer,
+  .tagembedImageWrapper.iframeVideo .ReactPlayer>div,
+  .tagembedImageWrapper.iframeVideo,
+  .tagembedImageWrapper.videoPost {
+    width: 441px !important;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo .ReactPlayer,
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo .ReactPlayer>div,
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo,
+  .tagembedModal.modal-text-image-vimeo-youtube .videoPost {
+    width: 441px !important;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo.imageCardN8,
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo.imageCardN8 .ReactPlayer>div {
+    width: 441px !important;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .modal-dialog {
+    max-width: 92%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tagembedModal .tagembedContentWrapper {
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  .modal-text-image .popupBlurimg {
+    min-width: 300px;
+  }
+
+  .modalWrapper .slick-slider {
+    width: 300px;
+  }
+
+  .modal-only-text .modal-dialog.modal-dialog-centered {
+    max-width: 670px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .modal-only-text .tagembedContentWrapper {
+    width: 100%;
+    max-width: inherit;
+    min-width: inherit;
+    height: auto;
+  }
+
+  .slick-slider .popupBlurimg {
+    min-width: 100%;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .modal-dialog {
+    max-width: 100%;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .modalWrapper {
+    padding: 0px 31px;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .tagembedContentWrapper {
+    width: 270px;
+    max-width: 270px;
+    min-width: 270px;
+  }
+
+  .tagembedImageWrapper.iframeVideo .ReactPlayer,
+  .tagembedImageWrapper.iframeVideo .ReactPlayer>div,
+  .tagembedImageWrapper.iframeVideo,
+  .tagembedImageWrapper.videoPost {
+    width: 300px !important;
+  }
+
+  .modal-text-image-vimeo-youtube .tagembedImageWrapper.iframeVideo .ReactPlayer,
+  .modal-text-image-vimeo-youtube .tagembedImageWrapper.iframeVideo .ReactPlayer>div,
+  .modal-text-image-vimeo-youtube .tagembedImageWrapper.iframeVideo,
+  .modal-text-image-vimeo-youtube .tagembedImageWrapper.videoPost {
+    width: 435px !important;
+  }
+
+  .modal-only-image .tagembedImageWrapper.iframeVideo .ReactPlayer,
+  .modal-only-image .tagembedImageWrapper.iframeVideo .ReactPlayer>div,
+  .modal-only-image .tagembedImageWrapper.iframeVideo,
+  .modal-only-image .tagembedImageWrapper.videoPost {
+    width: 450px !important;
+  }
+
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo .ReactPlayer,
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo .ReactPlayer>div,
+  .tagembedModal.modal-text-image-vimeo-youtube .iframeVideo,
+  .tagembedModal.modal-text-image-vimeo-youtube .videoPost {
+    width: 435px !important;
+  }
+
+  .tagembedImageWrapper.iframeVideo.imageCardN31 .ReactPlayer {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .tagembedModal.modal.show .modal-dialog {
+    width: $size96;
+  }
+
+  div.modal-text-image .socialPanel {
+    position: $inherit;
+    bottom: $inherit;
+    right: $inherit;
+    left: $inherit;
+  }
+
+  .modalWrapper .slick-slider {
+    width: $sizefull;
+  }
+
+  .iframeVideo .ReactPlayer {
+    height: 100% !important;
+  }
+
+  .tagembedModal {
+    padding-top: 50px;
+
+    &.tiktopPopupwrap {
+      .modal-content {
+        height: 100%;
+      }
+    }
+
+    /* after first modification */
+    &.tagembedModal.modal {
+      z-index: 999999;
+    }
+
+    .topNav {
+      position: $posfixed;
+      top: $p0;
+      left: $p0;
+      z-index: 99;
+      width: $sizefull;
+      background: #fff;
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid #f3f2f2;
+    }
+
+    .slideBtn {
+      z-index: 9999;
+      position: $posrel;
+      top: $p0;
+      right: $p0;
+      bottom: $p0;
+      left: $p0;
+      padding: $p0;
+      background: #f1f1f1;
+      border: $none;
+      width: 30px;
+      display: flex;
+      justify-content: $center;
+      align-items: $center;
+      margin-right: 5px;
+
+      img {
+        width: 20px;
+        opacity: 1;
+        height: 20px;
+        filter: brightness(0.1);
+      }
+    }
+
+    .modalCloseWrapper {
+      position: $posrel;
+      top: $p0;
+      right: $p0;
+      bottom: $p0;
+      left: $p0;
+      background: #f1f1f1;
+      border: $none;
+      opacity: 1;
+      width: 30px;
+      height: 30px;
+      padding: $p0;
+      margin-left: $auto;
+
+      .modalClose {
+        background-size: 12px;
+        width: $sizefull;
+        height: $sizefull;
+        filter: brightness(0.1);
+      }
+    }
+
+    .modal-dialog {
+      margin: 0 auto;
+      width: $sizefull;
+      padding: $p0;
+      max-width: 100% !important;
+      height: $sizefull;
+      overflow-x: $hidden;
+      overflow-y: $auto;
+      display: block;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .modalWrapper {
+      padding-right: $p0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      justify-content: normal;
+      padding-left: $p0;
+    }
+
+    .tagembedImageWrapper {
+      margin: $p0;
+      width: 100% !important;
+
+      iframe {
+        width: $sizefull;
+        min-height: $auto;
+        min-width: $sizefull;
+      }
+
+      &.iframeVideo {
+        width: 100% !important;
+
+        .ReactPlayer {
+          width: 100% !important;
+        }
+
+        .ReactPlayer>div {
+          width: 100% !important;
+        }
+      }
+
+    }
+
+    .tagembedContentWrapper {
+      max-width: $sizefull;
+      min-width: $sizefull;
+      width: $sizefull;
+      border: $none;
+    }
+
+    .modalOnlyContent {
+      height: $auto;
+      margin-bottom: 30px;
+    }
+
+    &.modal-text-image {
+      .slick-slide {
+        .tagembedImageWrapper {
+          height: 450px;
+          width: $sizefull;
+        }
+      }
+
+      .tagembedImageWrapper {
+        &.imageCardN7 {
+          height: 500px !important;
+          min-height: 500px;
+        }
+
+        &.imageCardN8 {
+          height: 244px !important;
+          min-height: 244px;
+        }
+      }
+    }
+
+    .popupBlurimg {
+      min-width: $sizefull;
+    }
+
+    .tiktok-embed {
+      padding: 10px 0;
+    }
+
+    &.tiktopPopupwrap {
+      .imageCardN31 {
+        height: 100%;
+      }
+    }
+
+    .popArrowSlide {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        height: 30px;
+        line-height: 26px;
+      }
+    }
+  }
+}

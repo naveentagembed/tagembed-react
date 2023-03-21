@@ -1,0 +1,184 @@
+@import "../variables.scss";
+
+.themeStart50 {
+  & .flatThemeCard {
+    height: $w300;
+  }
+
+  & .post,
+  & .post .image,
+  & .postContent {
+    height: $sizefull;
+    border: $p0;
+  }
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  & .postCardContent {
+    border: $p0;
+    position: $posabs;
+    left: $p0;
+    bottom: $p0;
+    @extend %width-stretch;
+    height: $p0;
+    opacity: $p0;
+    @include bg-opacity7;
+    @extend %trans8s;
+    @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-center;
+    @extend %fd-column;
+
+    & .postedText {
+      color: $white;
+      text-align: $center;
+      padding: $h5 $p18 $p0 $p18;
+      @extend %d-flex;
+      @extend %fd-column;
+      @extend %jc-center;
+      @extend %ai-center;
+      margin: $p0;
+
+      & h1,
+      & p {
+        line-height: $size112;
+        padding-top: $p2;
+        margin-top: $p0;
+        color: $inherit;
+      }
+    }
+
+    & ._innerDiv {
+      width: $sizefull;
+      @extend %fd-column;
+      @extend %jc-center;
+      @extend %ai-center;
+      @extend %d-flex;
+      height: $sizefull;
+    }
+  }
+
+  & .post:hover {
+    & .postCardContent {
+      opacity: $lh1;
+      height: calc(100% - 64px) !important;
+    }
+
+    & .image_overlay_black {
+      opacity: $p0;
+    }
+  }
+
+  & .image_overlay_black {
+    position: $posabs;
+    top: $p0;
+    width: $sizefull;
+    height: $size40;
+    background-color: $transparent;
+    @include lineargradient;
+    @extend %trans8s;
+  }
+
+  & .postNetwork {
+    position: $posabs;
+    top: $p16;
+    right: $p16;
+    z-index: $zindexhigh;
+    line-height: $p0;
+
+    & i {
+      font-size: $p24;
+      color: $white !important;
+      @extend %text-shadow42;
+    }
+  }
+
+  & .postAuthorClassic {
+    position: $posrel;
+    padding: 14.4px;
+
+    & .authorInfo {
+      @extend %d-inlineflex;
+      @extend %fd-column;
+      @extend %ai-center;
+
+      & .postAuthorName {
+        font-size: $fs14;
+        margin-top: $p8;
+      }
+      & .authrHandleTime {
+        @extend %d-inlineflex;
+      }
+
+      & .authrHandle,
+      & .timePost {
+        font-size: $p12;
+      }
+
+      & img {
+        width: $p56;
+        height: $p56;
+        border-radius: $sizehalf;
+        @include postboxshadow30;
+        border: $bordertype4 $white;
+        background-color: $white;
+      }
+      & .postNetwork {
+        position: $posabs;
+        right: $h10;
+        top: $h10;
+        font-size: $fs22;
+      }
+    }
+  }
+  /**/
+  & .postAuthorClassic {
+    padding-top: $p0;
+  }
+  & pre.chtrLimits.emojiApplied {
+    @include lineclamp4;
+  }
+  & p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+  & p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+  & p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+  & p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+  & pre.gallery_text_trim.chtrLimits.emojiApplied {
+    background-color: $transparent;
+    padding: $p0;
+  }
+  /* Hashtag highlighter trimcontent css start */
+  
+  pre.gallery_text_trim.chtrLimits.emojiApplied.line2{
+    @include lineclamp2;
+  }
+  pre.gallery_text_trim.chtrLimits.emojiApplied.line3{
+    @include lineclamp3;
+  }
+  pre.gallery_text_trim.chtrLimits.emojiApplied.line4{
+    @include lineclamp4;
+  }
+  pre.gallery_text_trim.chtrLimits.emojiApplied.line5{
+    @include lineclamp5;
+  }
+
+}

@@ -1,0 +1,397 @@
+.bannerTop .themeBanner,
+.bannerBottom .themeBanner, .bannerTop .bannerRight,
+.bannerBottom .bannerRight, .bannerTop .headbannerSocialIcon li a,
+.bannerBottom .headbannerSocialIcon li a, .themeBanner.banner-4-s .bannerContent, .themeBanner.banner-4-s .bannerMiddle .headBannerHashtag, .headbannerSocialIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bannerTop .themeBanner,
+.bannerBottom .themeBanner, .themeBanner.banner-4 .bannerMiddle .headBannerHashtag, .themeBanner.banner-5 .bannerMiddle .headBannerHashtag, .themeBanner.banner-4-s .bannerMiddle .headBannerHashtag, .themeBanner.banner-5-s .bannerMiddle .headBannerHashtag, .mobileHeadbannerSocialIcon {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeBanner.banner-4-s .bannerContent {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.bannerTop .bannerRight,
+.bannerBottom .bannerRight, .themeBanner.banner-2-s .bannerRight .searchBar {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.themeBanner.banner-3 .bannerRight,
+.themeBanner.banner-4 .bannerRight,
+.themeBanner.banner-5 .bannerRight, .themeBanner.banner-2-s .bannerRight.withoutLearnmore,
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore, .themeBanner.banner-4-s .bannerMiddle .headBannerHashtag, .headbannerSocialIcon li, .mobileHeadbannerSocialIcon {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.bannerTop .themeBanner,
+.bannerBottom .themeBanner, .bannerTop .bannerRight,
+.bannerBottom .bannerRight {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.bannerTop .bannerRight,
+.bannerBottom .bannerRight, .themeBanner.banner-4-s .bannerMiddle .headBannerHashtag {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.themeBanner.banner-4-s .bannerMiddle div.headBannerHashtag, .headbannerSocialIcon {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.themeBanner.banner-2 .bannerLeft, .themeBanner.banner-2 .bannerMiddle {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.themeBanner.banner-2-s .headbannerSocialIcon, .themeBanner.banner-2 .bannerRight {
+  transform: translateX(-50%); }
+
+.tagembed-mobile-banner {
+  word-break: break-word; }
+
+.themeBanner.banner-4 .bannerMiddle .headBannerHashtag, .themeBanner.banner-5 .bannerMiddle .headBannerHashtag, .themeBanner.banner-5-s .bannerMiddle .headBannerHashtag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.bannerTop .themeBanner,
+.bannerBottom .themeBanner {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative; }
+.bannerTop .bannerLogo,
+.bannerBottom .bannerLogo {
+  position: relative; }
+  .bannerTop .bannerLogo img,
+  .bannerBottom .bannerLogo img {
+    max-height: 70px;
+    padding: 0;
+    margin-bottom: 8px; }
+.bannerTop .headBannerHashtag,
+.bannerBottom .headBannerHashtag {
+  text-align: center; }
+.bannerTop .bannerRight,
+.bannerBottom .bannerRight {
+  height: 100%; }
+.bannerTop .headbannerSocialIcon,
+.bannerBottom .headbannerSocialIcon {
+  margin: 0;
+  padding-bottom: 8px; }
+.bannerTop .headbannerSocialIcon li,
+.bannerBottom .headbannerSocialIcon li {
+  height: auto !important;
+  line-height: normal !important; }
+
+.tiktok-icon {
+  max-height: 20px; }
+
+.themeBanner {
+  overflow: hidden; }
+
+.themeBanner.banner-2-s .bannerMiddle {
+  position: absolute;
+  right: 25px;
+  top: 15px; }
+.themeBanner.banner-2-s .headbannerSocialIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -19px; }
+.themeBanner.banner-2-s .bannerRight .searchBar {
+  height: 100%; }
+
+.themeBanner.banner-2 .bannerLogo img,
+.themeBanner.banner-3 .bannerLogo img,
+.themeBanner.banner-4 .bannerLogo img,
+.themeBanner.banner-5 .bannerLogo img {
+  max-height: 90px;
+  padding: 0;
+  margin-bottom: 0; }
+
+.themeBanner.banner-4 .bannerContent {
+  display: none; }
+
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore .headbannerSocialIcon {
+  padding-bottom: 0; }
+
+/*Banner Type-2*/
+.themeBanner.banner-2 .bannerLeft,
+.themeBanner.banner-2 .bannerMiddle,
+.themeBanner.banner-2 .bannerRight {
+  position: absolute; }
+
+.themeBanner.banner-2 {
+  position: relative; }
+  .themeBanner.banner-2 .bannerLeft {
+    left: 20px;
+    top: 50%; }
+  .themeBanner.banner-2 .bannerMiddle {
+    right: 20px;
+    top: 50%; }
+  .themeBanner.banner-2 .bannerRight {
+    left: 50%;
+    top: 50%;
+    margin-top: -19px; }
+  .themeBanner.banner-2 .headbannerSocialIcon li {
+    margin: 4px; }
+    .themeBanner.banner-2 .headbannerSocialIcon li i {
+      width: 100%;
+      text-align: center;
+      line-height: inherit; }
+
+/*Banner Type-3*/
+.themeBanner.banner-3 {
+  position: relative; }
+
+/*Banner Type-4*/
+.themeBanner.banner-4:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: #fff;
+  height: 100%;
+  width: 180px;
+  z-index: -1; }
+
+.themeBanner.banner-4 .bannerLeft .bannerLogo {
+  display: none; }
+.themeBanner.banner-4 .bannerMiddle .headBannerHashtag h1 {
+  padding-left: 6px;
+  margin: 0; }
+.themeBanner.banner-4 .headbannerSocialIcon li {
+  margin: 4px; }
+
+.themeBanner.banner-4 .headbannerSocialIcon li .fa.fa-twitter {
+  margin-top: 5px; }
+
+.themeBanner.banner-4 .headbannerSocialIcon {
+  margin: 0; }
+
+/*Banner Type-5*/
+.themeBanner.banner-5:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fff;
+  height: 100%;
+  min-width: 200px;
+  width: 15%;
+  transform: skewX(-24deg) translateX(-26px); }
+
+.themeBanner.banner-5 .bannerMiddle .headBannerHashtag h1 {
+  padding-left: 6px;
+  margin: 0; }
+
+/*--Start-- Custome Banner With Search*/
+/*Banner Type-2*/
+.themeBanner.banner-2-s {
+  position: relative; }
+  .themeBanner.banner-2-s .headbannerSocialIcon li {
+    margin: 4px; }
+
+/*Banner Type-3*/
+/*Banner Type-4*/
+.themeBanner.banner-4-s {
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent; }
+  .themeBanner.banner-4-s:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    z-index: -1; }
+  .themeBanner.banner-4-s .bannerContent {
+    height: 100%; }
+  .themeBanner.banner-4-s .bannerMiddle {
+    position: absolute;
+    left: 25px;
+    top: 10px; }
+
+.themeBanner.banner-4-s .bannerLeft .bannerLogo {
+  display: none; }
+.themeBanner.banner-4-s .bannerMiddle .headBannerHashtag span {
+  margin-right: 5px; }
+.themeBanner.banner-4-s .bannerMiddle .headBannerHashtag h1 {
+  margin: 0; }
+.themeBanner.banner-4-s .headbannerSocialIcon li {
+  margin: 0; }
+
+.themeBanner.banner-4-s .headbannerSocialIcon {
+  margin: 0; }
+
+/*Banner Type-5*/
+.themeBanner.banner-5-s {
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent; }
+  .themeBanner.banner-5-s:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    min-width: 200px;
+    width: 22%;
+    -webkit-transform: skewX(-21deg) translateX(-26px);
+    -ms-transform: skewX(-21deg) translateX(-26px);
+    transform: skewX(-21deg) translateX(-26px); }
+
+.themeBanner.banner-5-s {
+  position: relative; }
+  .themeBanner.banner-5-s .bannerMiddle .headBannerHashtag h1 {
+    padding-left: 6px;
+    margin: 0; }
+  .themeBanner.banner-5-s .headbannerSocialIcon li {
+    margin: 4px; }
+
+/*--End-- Custome Banner With Search*/
+.headbannerSocialIcon {
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 4px; }
+
+.headbannerSocialIcon li::marker {
+  content: none; }
+
+.headbannerSocialIcon li {
+  display: inherit; }
+
+.headbannerSocialIcon li {
+  display: inherit; }
+
+.bannerLogo img {
+  max-height: 100%; }
+
+.bannerMiddle h1 {
+  text-transform: lowercase;
+  margin: 0; }
+
+.headbannerSocialIcon .fa.fa-facebook {
+  color: #1877f2; }
+.headbannerSocialIcon .fa.fa-twitter {
+  color: #1da1f2; }
+.headbannerSocialIcon .fa.fa-instagram {
+  color: #c32aa3; }
+
+.tagembed-mobile-banner {
+  background-color: #13737b;
+  min-height: 100%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff; }
+
+.tagembed-mobile-banner img {
+  max-width: 60px;
+  width: 100%; }
+
+.tagembed-mobile-banner p {
+  font-size: 20px;
+  margin-bottom: 0; }
+
+.tagembed-mobile-banner h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  margin: 0; }
+
+.mobileHeadbannerSocialIcon {
+  margin-top: 5%; }
+
+.themeBanner.banner-6 .bannerMiddle {
+  position: absolute;
+  left: 66px;
+  top: 26px; }
+
+.themeBanner.banner-6 .bannerRight.withoutLearnmore {
+  height: auto; }
+
+.amaz_rvw_0 {
+  display: flex;
+  align-items: center;
+  margin-top: 7px; }
+
+.writervwbtn .btn {
+  border-radius: 4px;
+  background-color: #24A0ED;
+  padding: 0.65rem 1rem;
+  font-size: 1rem; }
+
+.writervwbtn .btn:hover {
+  color: #fff; }
+
+.rating_star {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0; }
+
+.rating_star > li {
+  list-style: none;
+  margin: 0 3px;
+  position: relative; }
+
+.yellow_star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+
+@media only screen and (max-width: 767px) {
+  .tagembed-mobile-banner img {
+    max-width: 40px; }
+
+  .tagembed-mobile-banner p {
+    font-size: 16px; }
+
+  .tagembed-mobile-banner h1 {
+    font-size: 25px; }
+
+  .themeBanner.banner-6 {
+    padding: 10px; }
+
+  .amaz_rvw img {
+    max-width: 25px; } }
+@media screen and (max-width: 380px) {
+  .themeBanner.banner-2 .bannerRight,
+  .themeBanner.banner-3 .bannerRight,
+  .themeBanner.banner-5 .bannerRight {
+    display: none; }
+
+  .themeBanner.banner-3 .bannerMiddle,
+  .themeBanner.banner-5 .bannerMiddle {
+    left: inherit;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+  .themeBanner.banner-4 .bannerRight {
+    right: 0; }
+
+  .themeBanner.banner-4 .bannerMiddle .headBannerHashtag,
+  .themeBanner.banner-5 .bannerMiddle .headBannerHashtag {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+  .themeBanner.banner-4:after {
+    width: 136px; }
+
+  .themeBanner.banner-5:before {
+    min-width: 176px; } }
+
+/*# sourceMappingURL=themeBanner.css.map */

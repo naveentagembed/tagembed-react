@@ -1,0 +1,135 @@
+@import "../variables.scss";
+
+.themeStart20 {
+  & .post {
+    border-radius: $p4;
+    margin: $p0;
+  }
+
+  & .shareOptions {
+    top: $h60;
+  }
+
+  & .socialPostAction:last-child {
+    padding-right: $p8;
+  }
+
+  & .poweredbywrapper {
+    padding-right: $h40 !important;
+  }
+
+  .trimContenTrue .image img {
+    max-height: $w400;
+    @include objfitcover;
+    height: $sizefull;
+  }
+
+  & .post .postContent .image div.multipostIcon {
+    position: $posabs;
+    top: $h15;
+    left: $h15;
+    right: auto;
+
+    img {
+      height: $h20;
+      width: $h20;
+      max-height: $h20;
+      min-height: $h20;
+      border-radius: 0;
+    }
+  }
+
+  .trimContenTrue .videoIcon {
+    width: $p62 !important;
+    height: $auto !important;
+    @include scale1;
+    @extend %trans3s;
+  }
+
+  .trimContenTrue .postContent .postCardContent {
+    max-height: $w300;
+  }
+
+  // new code for LineTrim Start
+
+  p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+
+  p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+
+  p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+
+  p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+
+  p.chtrLimits.emojiApplied.line2 {
+    @include lineclamp2;
+  }
+
+  p.chtrLimits.emojiApplied.line3 {
+    @include lineclamp3;
+  }
+
+  p.chtrLimits.emojiApplied.line5 {
+    @include lineclamp5;
+  }
+
+  p.chtrLimits.emojiApplied.line4 {
+    @include lineclamp4;
+  }
+
+  // new code for LineTrim End
+  .trimContenTrue p.chtrLimits.emojiApplied {
+    @include lineclamp3;
+  }
+
+  /**/
+  & pre.chtrLimits.emojiApplied {
+    background: $transparent;
+  }
+
+  /* Hashtag highlighter trimcontent css start */
+
+  pre.chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+  }
+
+  pre.chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+  }
+
+  pre.chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+  }
+
+  pre.chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+  }
+
+}

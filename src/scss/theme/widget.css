@@ -1,0 +1,181 @@
+.themeStart49 .socialPostAction {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.themeStart49 .poweredBy49wrap {
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.25); }
+
+.themeStart49 .themeBanner.banner-2 .headBannerLogo, .themeStart49 .themeBanner.banner-5 .headBannerLogo, .themeStart49 .themeBanner.banner-3 .headerBannerMiddle .headBannerHeading {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.themeStart49 {
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative; }
+  .themeStart49.inAppTheme {
+    max-width: 380px;
+    min-width: 380px;
+    max-height: 84vh;
+    margin-top: 3vh; }
+  .themeStart49 .post {
+    border: 0;
+    margin: 0; }
+  .themeStart49 .post .postContent .image div.multipostIcon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: auto; }
+    .themeStart49 .post .postContent .image div.multipostIcon img {
+      height: 20px;
+      width: 20px;
+      max-height: 20px;
+      min-height: 20px;
+      border-radius: 0; }
+  .themeStart49 .flatThemeCard {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .themeStart49 .theme49 {
+    padding: 0 6px; }
+  .themeStart49 .themeWrap {
+    left: 0; }
+  .themeStart49 .cardPostCTA {
+    margin-top: 0;
+    margin-bottom: 12.8px; }
+  .themeStart49 .isCta .cardPostCTA {
+    margin-bottom: 12px; }
+  .themeStart49 .postAuthor .postNetwork {
+    top: calc(50% - 11px);
+    line-height: 0; }
+  .themeStart49 .objectCard .postAuthor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0.6)), to(rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(top, rgba(2, 0, 36, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 0.6) 0%, rgba(255, 255, 255, 0) 100%); }
+    .themeStart49 .objectCard .postAuthor .postAuthorName, .themeStart49 .objectCard .postAuthor .authrHandle, .themeStart49 .objectCard .postAuthor .timePost, .themeStart49 .objectCard .postAuthor .sepratedot {
+      color: #fff !important; }
+  .themeStart49 .scrollbar-thumb {
+    background: #4179ff !important;
+    width: 4px !important; }
+  .themeStart49 .scrollbar-track-y {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4px !important; }
+  .themeStart49 .scrollbar-track-x {
+    display: none !important; }
+  .themeStart49 .socialPostAction {
+    background-color: transparent;
+    padding: 3px 10px; }
+  .themeStart49 .shareOptions {
+    position: absolute;
+    transform: none;
+    right: 0;
+    bottom: 0;
+    top: inherit;
+    background: transparent;
+    left: inherit;
+    padding: 10px; }
+    .themeStart49 .shareOptions a {
+      width: auto;
+      height: auto;
+      text-align: inherit;
+      border-radius: 0;
+      box-shadow: none;
+      background: transparent;
+      line-height: 0;
+      padding: 0 6px;
+      transform: none !important;
+      font-size: inherit; }
+    .themeStart49 .shareOptions:hover a {
+      margin: 0 !important; }
+  .themeStart49 .themeBanner.banner-2 .headerBannerMiddle, .themeStart49 .themeBanner.banner-3 .headerbannerRight {
+    right: 10px; }
+  .themeStart49 .themeBanner.banner-2 .headerBannerLeft, .themeStart49 .themeBanner.banner-3 .headerBannerLeft, .themeStart49 .themeBanner.banner-5 .headerBannerLeft {
+    left: 10px; }
+  .themeStart49 .themeBanner.banner-2 .headBannerLogo, .themeStart49 .themeBanner.banner-5 .headBannerLogo {
+    width: 112px; }
+    .themeStart49 .themeBanner.banner-2 .headBannerLogo img, .themeStart49 .themeBanner.banner-5 .headBannerLogo img {
+      max-width: 100% !important; }
+  .themeStart49 .themeBanner.banner-3 .headerBannerMiddle .headBannerHeading h1 {
+    padding-left: 4px; }
+  .themeStart49 .themeBanner.banner-3 .headerbannerRight {
+    top: 30%; }
+  .themeStart49 .themeBanner.banner-4 .headerbannerRight {
+    right: 4px; }
+  .themeStart49 .themeBanner.banner-4:after {
+    width: 138px; }
+  .themeStart49 .themeBanner.banner-5 .headerbannerRight {
+    right: 4px;
+    top: 36%; }
+  .themeStart49 .themeBanner.banner-5:before {
+    min-width: 150px; }
+  .themeStart49 .themeBanner.banner-5 .headerBannerMiddle, .themeStart49 .themeBanner.banner-3 .headerBannerMiddle {
+    left: inherit;
+    transform: none;
+    top: inherit;
+    bottom: 10px;
+    right: 10px; }
+  .themeStart49 .themeBanner {
+    padding: 0 25px; }
+  .themeStart49 .poweredBy49wrap {
+    position: absolute;
+    bottom: 4px;
+    z-index: 999999;
+    right: 4px; }
+  .themeStart49 .theme49_poweredByMain .loadmorebtn49 {
+    padding-bottom: 40px; }
+  .themeStart49 .chtrLimits.emojiApplied.line2 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart49 .chtrLimits.emojiApplied.line3 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .themeStart49 .chtrLimits.emojiApplied.line4 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis; }
+  .themeStart49 .chtrLimits.emojiApplied.line5 {
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis; }
+  .themeStart49 .themeBanner.banner-5 .headBannerHashtag {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important; }
+  .themeStart49 .themeBanner.banner-5 .bannerRight.withoutLearnmore {
+    height: 0px; }
+  .themeStart49 pre.chtrLimits.emojiApplied {
+    background: transparent; }
+
+@media (max-width: 767px) {
+  .themeStart49 .flatThemeCard {
+    left: 0 !important;
+    width: 100% !important; } }
+
+/*# sourceMappingURL=widget.css.map */

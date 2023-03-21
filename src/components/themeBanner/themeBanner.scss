@@ -1,0 +1,1046 @@
+@import "../../scss/variables.scss";
+
+.bannerTop,
+.bannerBottom {
+  .themeBanner {
+    padding-left: $h25;
+    padding-right: $h25;
+    @extend %d-flex;
+    @extend %ai-center;
+    @extend %jc-spacebetween;
+    padding-top: $h15;
+    padding-bottom: $h15;
+    position: $posrel;
+  }
+
+  .bannerLogo {
+    position: $posrel;
+
+    img {
+      max-height: $h70;
+      padding: $p0;
+      margin-bottom: $p8;
+    }
+  }
+
+  .headBannerHashtag {
+    text-align: $center;
+  }
+
+  .bannerRight {
+    @extend %d-flex;
+    @extend %fd-column;
+    @extend %jc-flexend;
+    @extend %jc-spacebetween;
+    height: $sizefull;
+  }
+
+  .headbannerSocialIcon {
+    margin: $p0;
+    padding-bottom: $p8;
+  }
+
+  .headbannerSocialIcon {
+    li {
+      height: $auto  !important;
+      line-height: $normal  !important;
+
+      a {
+        @extend %d-flex;
+      }
+    }
+  }
+}
+
+.tiktok-icon {
+  max-height: $h20;
+}
+
+.themeBanner {
+  overflow: $hidden;
+}
+
+.themeBanner.banner-2-s {
+  .bannerMiddle {
+    position: $posabs;
+    right: $h25;
+    top: $h15;
+  }
+
+  .headbannerSocialIcon {
+    position: $posabs;
+    left: $sizehalf;
+    @extend %translateX50;
+    top: $sizehalf;
+    margin-top: -19px;
+  }
+
+  .bannerRight {
+    .searchBar {
+      height: $sizefull;
+      @extend %jc-flexend;
+    }
+  }
+}
+
+.themeBanner.banner-2,
+.themeBanner.banner-3,
+.themeBanner.banner-4,
+.themeBanner.banner-5 {
+  .bannerLogo {
+    img {
+      max-height: $h90;
+      padding: $p0;
+      margin-bottom: $p0;
+    }
+  }
+}
+
+.themeBanner.banner-3,
+.themeBanner.banner-4,
+.themeBanner.banner-5 {
+  .bannerRight {
+    @extend %jc-center;
+  }
+}
+
+.themeBanner.banner-4 {
+  .bannerContent {
+    display: $none;
+  }
+}
+
+.themeBanner.banner-2-s .bannerRight.withoutLearnmore,
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore {
+  @extend %jc-center;
+}
+
+.themeBanner.banner-3-s .bannerRight.withoutLearnmore .headbannerSocialIcon {
+  padding-bottom: $p0;
+}
+
+/*Banner Type-2*/
+.themeBanner.banner-2 {
+
+  & .bannerLeft,
+  .bannerMiddle,
+  .bannerRight {
+    position: $posabs;
+  }
+}
+
+.themeBanner.banner-2 {
+  position: $posrel;
+
+  & .bannerLeft {
+    left: $h20;
+    top: $sizehalf;
+    @extend %translateY50;
+  }
+
+  & .bannerMiddle {
+    right: $h20;
+    top: $sizehalf;
+    @extend %translateY50;
+  }
+
+  & .bannerRight {
+    left: $sizehalf;
+    @extend %translateX50;
+    top: $sizehalf;
+    margin-top: -19px;
+  }
+
+  & .headbannerSocialIcon li {
+    margin: $p4;
+
+    & i {
+      width: $sizefull;
+      text-align: $center;
+      line-height: $inherit;
+    }
+  }
+}
+
+/*Banner Type-3*/
+.themeBanner.banner-3 {
+  position: $posrel;
+}
+
+/*Banner Type-4*/
+.themeBanner.banner-4 {
+  &:after {
+    content: "";
+    position: $posabs;
+    right: $p0;
+    background: $white;
+    height: $sizefull;
+    width: $w180;
+    z-index: -1;
+  }
+}
+
+.themeBanner.banner-4 {
+  & .bannerLeft {
+    & .bannerLogo {
+      display: $none;
+    }
+  }
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      @extend %d-inlineflex;
+      @extend %ai-center;
+
+      & h1 {
+        padding-left: $p6;
+        margin: $p0;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: $p4;
+  }
+}
+
+.themeBanner.banner-4 .headbannerSocialIcon li .fa.fa-twitter {
+  margin-top: $h5;
+}
+
+.themeBanner.banner-4 .headbannerSocialIcon {
+  margin: $p0;
+}
+
+/*Banner Type-5*/
+.themeBanner.banner-5 {
+  &:before {
+    content: "";
+    position: $posabs;
+    left: $p0;
+    background: $white;
+    height: $sizefull;
+    min-width: $w200;
+    width: $size15;
+    transform: skewX(-24deg) translateX(-26px);
+  }
+}
+
+.themeBanner.banner-5 {
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      @extend %d-inlineflex;
+      @extend %ai-center;
+
+      & h1 {
+        padding-left: $p6;
+        margin: $p0;
+      }
+    }
+  }
+}
+
+/*--Start-- Custome Banner With Search*/
+/*Banner Type-2*/
+
+.themeBanner.banner-2-s {
+  position: $posrel;
+
+  & .headbannerSocialIcon li {
+    margin: $p4;
+  }
+}
+
+/*Banner Type-3*/
+/*Banner Type-4*/
+.themeBanner.banner-4-s {
+  position: $posrel;
+  z-index: $lh1;
+  border: $bordertype3 $transparent;
+
+  &:after {
+    content: "";
+    position: $posabs;
+    right: $p0;
+    background: $white;
+    height: $sizefull;
+    z-index: -1;
+  }
+
+  .bannerContent {
+    @extend %d-flex;
+    // @extend %jc-flexend;
+    @extend %ai-flexend;
+    height: $sizefull;
+  }
+
+  .bannerMiddle {
+    position: $posabs;
+    left: $h25;
+    top: $h10;
+  }
+
+  .bannerMiddle {
+    div.headBannerHashtag {
+      @extend %fd-row;
+    }
+  }
+}
+
+.themeBanner.banner-4-s {
+  & .bannerLeft {
+    & .bannerLogo {
+      display: $none;
+    }
+  }
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      @extend %d-flex;
+      @extend %ai-center;
+      @extend %jc-center;
+      @extend %fd-column;
+
+      & span {
+        margin-right: $h5;
+      }
+
+      & h1 {
+        margin: $p0;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: $p0;
+  }
+}
+
+.themeBanner.banner-4-s .headbannerSocialIcon {
+  margin: $p0;
+}
+
+/*Banner Type-5*/
+.themeBanner.banner-5-s {
+  position: $posrel;
+  z-index: $lh1;
+  border: $bordertype3 $transparent;
+
+  &:before {
+    content: "";
+    position: $posabs;
+    left: $p0;
+    background: $white;
+    height: $sizefull;
+    min-width: $w200;
+    width: $size22;
+    -webkit-transform: skewX(-21deg) translateX(-26px);
+    -ms-transform: skewX(-21deg) translateX(-26px);
+    transform: skewX(-21deg) translateX(-26px);
+  }
+}
+
+.themeBanner.banner-5-s {
+  position: $posrel;
+
+  & .bannerMiddle {
+    & .headBannerHashtag {
+      @extend %d-inlineflex;
+      @extend %ai-center;
+
+      & h1 {
+        padding-left: $p6;
+        margin: $p0;
+      }
+    }
+  }
+
+  & .headbannerSocialIcon li {
+    margin: $p4;
+  }
+}
+
+/*--End-- Custome Banner With Search*/
+
+.headbannerSocialIcon {
+  @extend %d-flex;
+  // @extend %fd-column;
+  padding-left: $p0;
+  margin-bottom: $p0;
+  border-radius: $p4;
+  @extend %fd-row;
+}
+
+.headbannerSocialIcon li::marker {
+  content: $none;
+}
+
+.headbannerSocialIcon li {
+  display: $inherit;
+}
+
+.headbannerSocialIcon li {
+  display: $inherit;
+  @extend %jc-center;
+}
+
+.bannerLogo img {
+  max-height: $sizefull;
+}
+
+.bannerMiddle h1 {
+  text-transform: $caselower;
+  margin: $p0;
+}
+
+.headbannerSocialIcon {
+  & .fa.fa-facebook {
+    color: $fbshare;
+  }
+
+  & .fa.fa-twitter {
+    color: $twshare;
+  }
+
+  & .fa.fa-instagram {
+    color: $inshare;
+  }
+}
+
+.tagembed-mobile-banner {
+  background-color: rgb(19, 115, 123);
+  min-height: $sizefull;
+  width: $sizefull;
+  padding: $h10;
+  text-align: $center;
+  color: $white;
+  @extend %wordbreak;
+}
+
+.tagembed-mobile-banner img {
+  max-width: $h60;
+  width: $sizefull;
+}
+
+.tagembed-mobile-banner p {
+  font-size: $h20;
+  margin-bottom: $p0;
+}
+
+.tagembed-mobile-banner h1 {
+  margin-bottom: $p0;
+  font-size: $h40;
+  margin: $p0;
+}
+
+.mobileHeadbannerSocialIcon {
+  @extend %ai-center;
+  @extend %jc-center;
+  margin-top: $size5;
+}
+
+// AMAZON banner START
+.themeBanner.banner-6 .bannerMiddle {
+  position: absolute;
+  left: 66px;
+  top: 26px;
+}
+
+.themeBanner.banner-6 .bannerRight.withoutLearnmore {
+  height: auto;
+}
+
+.amaz_rvw_0 {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.writervwbtn .btn {
+  border-radius: 4px;
+  background-color: #24A0ED;
+  //color: #000;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+}
+
+.writervwbtn .btn:hover {
+  color: #fff;  
+}
+
+
+
+.rating_star {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.rating_star>li {
+  list-style: none;
+  margin: 0 3px;
+  position: relative;
+}
+
+.yellow_star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+// style given for google banner upload logo css as display none
+// .themeBanner.banner-6 .bannerContent .bannerLeft .bannerLogo{
+//   display: none;
+// }
+
+
+
+@media only screen and (max-width: 767px) {
+  .tagembed-mobile-banner img {
+    max-width: $h40;
+  }
+
+  .tagembed-mobile-banner p {
+    font-size: $p16;
+  }
+
+  .tagembed-mobile-banner h1 {
+    font-size: $h25;
+  }
+
+  .themeBanner.banner-6 {
+    padding: 10px;
+  }
+
+  .amaz_rvw{
+    img{max-width: 25px;}
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .themeBanner.banner-2 .bannerRight,
+  .themeBanner.banner-3 .bannerRight,
+  .themeBanner.banner-5 .bannerRight {
+    display: $none;
+  }
+
+  .themeBanner.banner-3 .bannerMiddle,
+  .themeBanner.banner-5 .bannerMiddle {
+    left: $inherit;
+    right: $h20;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .themeBanner.banner-4 .bannerRight {
+    right: $p0;
+  }
+
+  .themeBanner.banner-4 .bannerMiddle .headBannerHashtag,
+  .themeBanner.banner-5 .bannerMiddle .headBannerHashtag {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .themeBanner.banner-4:after {
+    width: $w136;
+  }
+
+  .themeBanner.banner-5:before {
+    min-width: $w176;
+  }
+}
+
+
+
+
+
+
+
+
+
+// @import "../../scss/variables.scss";
+// .bannerTop,
+// .bannerBottom {
+//   .themeBanner {
+//     padding-left: $h25;
+//     padding-right: $h25;
+//     @extend %d-flex;
+//     @extend %ai-center;
+//     @extend %jc-spacebetween;
+//     padding-top: $h15;
+//     padding-bottom: $h15;
+//     position: $posrel;
+//   }
+
+//   .bannerLogo {
+//     position: $posrel;
+
+//     img {
+//       max-height: $h70;
+//       padding: $p0;
+//       margin-bottom: $p8;
+//     }
+//   }
+
+//   .headBannerHashtag {
+//     text-align: $center;
+//   }
+
+//   .bannerRight {
+//     @extend %d-flex;
+//     @extend %fd-column;
+//     @extend %jc-flexend;
+//     @extend %jc-spacebetween;
+//     height: $sizefull;
+//   }
+
+//   .headbannerSocialIcon {
+//     margin: $p0;
+//     padding-bottom: $p8;
+//   }
+
+//   .headbannerSocialIcon {
+//     li {
+//       height: $auto !important;
+//       line-height: $normal !important;
+
+//       a {
+//         @extend %d-flex;
+//       }
+//     }
+//   }
+// }
+
+// .tiktok-icon {
+//   max-height: $h20;
+// }
+
+// .themeBanner {
+//   overflow: $hidden;
+// }
+
+// .themeBanner.banner-2-s {
+//   .bannerMiddle {
+//     position: $posabs;
+//     right: $h25;
+//     top: $h15;
+//   }
+
+//   .headbannerSocialIcon {
+//     position: $posabs;
+//     left: $sizehalf;
+//     @extend %translateX50;
+//     top: $sizehalf;
+//     margin-top: -19px;
+//   }
+
+//   .bannerRight {
+//     .searchBar {
+//       height: $sizefull;
+//       @extend %jc-flexend;
+//     }
+//   }
+// }
+
+// .themeBanner.banner-2,
+// .themeBanner.banner-3,
+// .themeBanner.banner-4,
+// .themeBanner.banner-5 {
+//   .bannerLogo {
+//     img {
+//       max-height: $h90;
+//       padding: $p0;
+//       margin-bottom: $p0;
+//     }
+//   }
+// }
+
+// .themeBanner.banner-3,
+// .themeBanner.banner-4,
+// .themeBanner.banner-5 {
+//   .bannerRight {
+//     @extend %jc-center;
+//   }
+// }
+
+// .themeBanner.banner-4 {
+//   .bannerContent {
+//     display: $none;
+//   }
+// }
+
+// .themeBanner.banner-2-s .bannerRight.withoutLearnmore,
+// .themeBanner.banner-3-s .bannerRight.withoutLearnmore {
+//   @extend %jc-center;
+// }
+
+// .themeBanner.banner-3-s .bannerRight.withoutLearnmore .headbannerSocialIcon {
+//   padding-bottom: $p0;
+// }
+
+// /*Banner Type-2*/
+// .themeBanner.banner-2 {
+//   & .bannerLeft,
+//   .bannerMiddle,
+//   .bannerRight {
+//     position: $posabs;
+//   }
+// }
+
+// .themeBanner.banner-2 {
+//   position: $posrel;
+
+//   & .bannerLeft {
+//     left: $h20;
+//     top: $sizehalf;
+//     @extend %translateY50;
+//   }
+
+//   & .bannerMiddle {
+//     right: $h20;
+//     top: $sizehalf;
+//     @extend %translateY50;
+//   }
+
+//   & .bannerRight {
+//     left: $sizehalf;
+//     @extend %translateX50;
+//     top: $sizehalf;
+//     margin-top: -19px;
+//   }
+
+//   & .headbannerSocialIcon li {
+//     margin: $p4;
+
+//     & i {
+//       width: $sizefull;
+//       text-align: $center;
+//       line-height: $inherit;
+//     }
+//   }
+// }
+
+// /*Banner Type-3*/
+// .themeBanner.banner-3 {
+//   position: $posrel;
+// }
+
+// /*Banner Type-4*/
+// .themeBanner.banner-4 {
+//   &:after {
+//     content: "";
+//     position: $posabs;
+//     right: $p0;
+//     background: $white;
+//     height: $sizefull;
+//     width: $w180;
+//     z-index: -1;
+//   }
+// }
+
+// .themeBanner.banner-4 {
+//   & .bannerLeft {
+//     & .bannerLogo {
+//       display: $none;
+//     }
+//   }
+
+//   & .bannerMiddle {
+//     & .headBannerHashtag {
+//       @extend %d-inlineflex;
+//       @extend %ai-center;
+
+//       & h1 {
+//         padding-left: $p6;
+//         margin: $p0;
+//       }
+//     }
+//   }
+
+//   & .headbannerSocialIcon li {
+//     margin: $p4;
+//   }
+// }
+
+// .themeBanner.banner-4 .headbannerSocialIcon li .fa.fa-twitter {
+//   margin-top: $h5;
+// }
+
+// .themeBanner.banner-4 .headbannerSocialIcon {
+//   margin: $p0;
+// }
+
+// /*Banner Type-5*/
+// .themeBanner.banner-5 {
+//   &:before {
+//     content: "";
+//     position: $posabs;
+//     left: $p0;
+//     background: $white;
+//     height: $sizefull;
+//     min-width: $w200;
+//     width: $size15;
+//     transform: skewX(-24deg) translateX(-26px);
+//   }
+// }
+
+// .themeBanner.banner-5 {
+//   & .bannerMiddle {
+//     & .headBannerHashtag {
+//       @extend %d-inlineflex;
+//       @extend %ai-center;
+
+//       & h1 {
+//         padding-left: $p6;
+//         margin: $p0;
+//       }
+//     }
+//   }
+// }
+
+// /*--Start-- Custome Banner With Search*/
+// /*Banner Type-2*/
+
+// .themeBanner.banner-2-s {
+//   position: $posrel;
+
+//   & .headbannerSocialIcon li {
+//     margin: $p4;
+//   }
+// }
+
+// /*Banner Type-3*/
+// /*Banner Type-4*/
+// .themeBanner.banner-4-s {
+//   position: $posrel;
+//   z-index: $lh1;
+//   border: $bordertype3 $transparent;
+
+//   &:after {
+//     content: "";
+//     position: $posabs;
+//     right: $p0;
+//     background: $white;
+//     height: $sizefull;
+//     z-index: -1;
+//   }
+
+//   .bannerContent {
+//     @extend %d-flex;
+//     // @extend %jc-flexend;
+//     @extend %ai-flexend;
+//     height: $sizefull;
+//   }
+
+//   .bannerMiddle {
+//     position: $posabs;
+//     left: $h25;
+//     top: $h10;
+//   }
+
+//   .bannerMiddle {
+//     div.headBannerHashtag {
+//       @extend %fd-row;
+//     }
+//   }
+// }
+
+// .themeBanner.banner-4-s {
+//   & .bannerLeft {
+//     & .bannerLogo {
+//       display: $none;
+//     }
+//   }
+
+//   & .bannerMiddle {
+//     & .headBannerHashtag {
+//       @extend %d-flex;
+//       @extend %ai-center;
+//       @extend %jc-center;
+//       @extend %fd-column;
+
+//       & span {
+//         margin-right: $h5;
+//       }
+
+//       & h1 {
+//         margin: $p0;
+//       }
+//     }
+//   }
+
+//   & .headbannerSocialIcon li {
+//     margin: $p0;
+//   }
+// }
+
+// .themeBanner.banner-4-s .headbannerSocialIcon {
+//   margin: $p0;
+// }
+
+// /*Banner Type-5*/
+// .themeBanner.banner-5-s {
+//   position: $posrel;
+//   z-index: $lh1;
+//   border: $bordertype3 $transparent;
+
+//   &:before {
+//     content: "";
+//     position: $posabs;
+//     left: $p0;
+//     background: $white;
+//     height: $sizefull;
+//     min-width: $w200;
+//     width: $size22;
+//     -webkit-transform: skewX(-21deg) translateX(-26px);
+//     -ms-transform: skewX(-21deg) translateX(-26px);
+//     transform: skewX(-21deg) translateX(-26px);
+//   }
+// }
+
+// .themeBanner.banner-5-s {
+//   position: $posrel;
+
+//   & .bannerMiddle {
+//     & .headBannerHashtag {
+//       @extend %d-inlineflex;
+//       @extend %ai-center;
+
+//       & h1 {
+//         padding-left: $p6;
+//         margin: $p0;
+//       }
+//     }
+//   }
+
+//   & .headbannerSocialIcon li {
+//     margin: $p4;
+//   }
+// }
+
+// /*--End-- Custome Banner With Search*/
+
+// .headbannerSocialIcon {
+//   @extend %d-flex;
+//   // @extend %fd-column;
+//   padding-left: $p0;
+//   margin-bottom: $p0;
+//   border-radius: $p4;
+//   @extend %fd-row;
+// }
+
+// .headbannerSocialIcon li::marker {
+//   content: $none;
+// }
+
+// .headbannerSocialIcon li {
+//   display: $inherit;
+// }
+
+// .headbannerSocialIcon li {
+//   display: $inherit;
+//   @extend %jc-center;
+// }
+
+// .bannerLogo img {
+//   max-height: $sizefull;
+// }
+
+// .bannerMiddle h1 {
+//   text-transform: $caselower;
+//   margin: $p0;
+// }
+
+// .headbannerSocialIcon {
+//   & .fa.fa-facebook {
+//     color: $fbshare;
+//   }
+
+//   & .fa.fa-twitter {
+//     color: $twshare;
+//   }
+
+//   & .fa.fa-instagram {
+//     color: $inshare;
+//   }
+// }
+
+// .tagembed-mobile-banner {
+//   background-color: rgb(19, 115, 123);
+//   min-height: $sizefull;
+//   width: $sizefull;
+//   padding: $h10;
+//   text-align: $center;
+//   color: $white;
+//   @extend %wordbreak;
+// }
+
+// .tagembed-mobile-banner img {
+//   max-width: $h60;
+//   width: $sizefull;
+// }
+
+// .tagembed-mobile-banner p {
+//   font-size: $h20;
+//   margin-bottom: $p0;
+// }
+
+// .tagembed-mobile-banner h1 {
+//   margin-bottom: $p0;
+//   font-size: $h40;
+//   margin: $p0;
+// }
+
+// .mobileHeadbannerSocialIcon {
+//   @extend %ai-center;
+//   @extend %jc-center;
+//   margin-top: $size5;
+// }
+
+// @media only screen and (max-width: 767px) {
+//   .tagembed-mobile-banner img {
+//     max-width: $h40;
+//   }
+//   .tagembed-mobile-banner p {
+//     font-size: $p16;
+//   }
+//   .tagembed-mobile-banner h1 {
+//     font-size: $h25;
+//   }
+// }
+
+// @media screen and (max-width: 380px) {
+//   .themeBanner.banner-2 .bannerRight,
+//   .themeBanner.banner-3 .bannerRight,
+//   .themeBanner.banner-5 .bannerRight {
+//     display: $none;
+//   }
+//   .themeBanner.banner-3 .bannerMiddle,
+//   .themeBanner.banner-5 .bannerMiddle {
+//     left: $inherit;
+//     right: $h20;
+//     -webkit-transform: translateY(-50%);
+//     -ms-transform: translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+//   .themeBanner.banner-4 .bannerRight {
+//     right: $p0;
+//   }
+//   .themeBanner.banner-4 .bannerMiddle .headBannerHashtag,
+//   .themeBanner.banner-5 .bannerMiddle .headBannerHashtag {
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//   }
+//   .themeBanner.banner-4:after {
+//     width: $w136;
+//   }
+//   .themeBanner.banner-5:before {
+//     min-width: $w176;
+//   }
+// }

@@ -1,0 +1,166 @@
+@import "./variables.scss";
+
+body {
+  margin: $p0;
+  padding: $p0;
+}
+
+*,
+::after,
+::before {
+  @extend %box-sizingbx;
+}
+
+
+.themesWrapper a,
+.themesWrapper a:hover {
+  text-decoration: $none;
+}
+
+img {
+  max-width: $sizefull;
+}
+
+.themesWrapper .small,
+.themesWrapper small {
+  font-size: $size70;
+}
+
+.fx-1 {
+  font-size: $h5 !important;
+}
+
+.border-none {
+  border: $p0 !important;
+}
+
+.roundedCircle {
+  border-radius: $sizehalf !important;
+}
+
+.shadowNone {
+  box-shadow: $none !important;
+}
+
+.themesWrapper img {
+  vertical-align: $valignmiddle;
+  border-style: $none;
+}
+
+.textTruncate {
+  @include ellipsis;
+  /* added due to client issue*/
+  text-align: left;
+}
+
+.p0 {
+  padding: $p0 !important;
+}
+
+/* BUTTON */
+.btnStyle {
+  display: $dinlineblock;
+  font-weight: $fw4;
+  color: $greyshade2;
+  text-align: $center;
+  vertical-align: $valignmiddle;
+  @include user-select;
+  background-color: $transparent;
+  border: $bordertype3 $transparent;
+  padding: $p6 $p12;
+  font-size: $p16;
+  line-height: $lh5;
+  border-radius: $p4;
+  @include button-trans;
+}
+
+input[type='submit'] button {
+  color: $inherit;
+  font-family: $inherit;
+  font-size: $inherit;
+  font-weight: $inherit;
+  text-transform: $inherit;
+  letter-spacing: $inherit;
+  display: $inherit;
+  background-color: $inherit;
+  display: $inherit;
+  height: $inherit;
+  padding: $inherit;
+  margin-top: $inherit;
+  border: $inherit;
+  outline: $inherit;
+  border-radius: $inherit;
+}
+
+.btnLink {
+  font-weight: $fw4;
+  color: $primary;
+  text-decoration: $none;
+}
+
+.btnStyle:not(:disabled):not(.disabled) {
+  cursor: $pointer;
+}
+
+.btnStyle:hover {
+  color: $greyshade2;
+  text-decoration: $none;
+}
+
+.btnStyle.primary {
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.btnStyle.primary:hover {
+  color: $white !important;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btnStyle.sm {
+  padding: $p4 $p8;
+  font-size: $fs14;
+  line-height: $lh5;
+  border-radius: $radius32;
+}
+
+
+.cursor-pointer {
+  cursor: $pointer;
+}
+
+.postCardContent pre {
+  margin: $p0;
+  @extend %wordbreak;
+}
+
+.themesWrapper div.postCardContent p {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+// new css for scroll bar
+.tagembed-container::-webkit-scrollbar {
+  width: $p6;
+  height: $p6;
+  background-color: $lighgrey;
+}
+
+.tagembed-container::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  @extend %radiuszero;
+}
+
+/**/
+.themesWrapper::-webkit-scrollbar {
+  width: $p6;
+  height: $p6;
+  background-color: $lighgrey;
+}
+
+.themesWrapper::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  @extend %radiuszero;
+}

@@ -1,0 +1,223 @@
+.themeStart55 .mo_slider-hover ._socialAction, .themeStart55 .tb_mo_slider_next_arrow,
+.themeStart55 .tb_mo_slider_pre_arrow, .themeStart55 #eThemePosts:hover .tb_mo_slider_next_arrow,
+.themeStart55 #eThemePosts:hover .tb_mo_slider_pre_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.themeStart55 .mo_slider-hover ._socialAction, .themeStart55 .tb_mo_slider_next_arrow,
+.themeStart55 .tb_mo_slider_pre_arrow {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.themeStart55 .mo_slider-hover ._socialAction {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.themeStart55 .tb_mo_slider_next_arrow,
+.themeStart55 .tb_mo_slider_pre_arrow {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.themeStart55 .postNetwork {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.themeStart55 .postCardContent .postedText {
+  transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  -webkit-transform: translateY(-55%); }
+
+.themeStart55 .flatThemeCard .postImg, .themeStart55 .flatThemeCard:hover .postImg {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+.themeStart55 .tb_mo_slider_next_arrow,
+.themeStart55 .tb_mo_slider_pre_arrow {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.themeStart55 .tb-mo_slider-item:focus-visible,
+.themeStart55 *:focus-visible {
+  outline: none; }
+.themeStart55 .mo_slider-hover ._socialAction {
+  color: #333;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background: none; }
+.themeStart55 .tb-mo_slider-item {
+  width: 100%;
+  position: relative;
+  display: block !important; }
+.themeStart55 .tb_mo_slider_pre_arrow svg,
+.themeStart55 .tb_mo_slider_next_arrow-next svg {
+  height: 14px; }
+.themeStart55 .tb_mo_slider_next_arrow,
+.themeStart55 .tb_mo_slider_pre_arrow {
+  border-radius: 3px;
+  background-color: #000;
+  opacity: 0.9;
+  cursor: pointer;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  top: 50%;
+  margin-top: -15px;
+  position: absolute;
+  z-index: 9 !important; }
+.themeStart55 .tb_mo_slider_next_arrow {
+  right: 5px;
+  left: auto; }
+.themeStart55 .tb_mo_slider_pre_arrow {
+  left: 5px;
+  right: auto; }
+.themeStart55 .tb_mo_slider_next_arrow:hover,
+.themeStart55 .tb_mo_slider_pre_arrow:hover {
+  opacity: 0.6; }
+.themeStart55 .rowBlock {
+  display: block !important; }
+.themeStart55 .slick-slide > div {
+  margin-bottom: 3px; }
+.themeStart55 .slick-slide > div + div {
+  margin-bottom: 0px; }
+.themeStart55 .slick-slide {
+  height: auto; }
+.themeStart55 .theme55 .slick-track {
+  min-width: 9999999px; }
+.themeStart55 .postCardContent .postedText {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  right: 3%;
+  color: #fff;
+  text-align: center;
+  width: 94%; }
+  .themeStart55 .postCardContent .postedText p, .themeStart55 .postCardContent .postedText h1 {
+    color: inherit; }
+.themeStart55 .flatThemeCard {
+  height: 100%;
+  padding: 0; }
+  .themeStart55 .flatThemeCard:hover .postCardContent {
+    opacity: 1; }
+  .themeStart55 .flatThemeCard:hover h1, .themeStart55 .flatThemeCard:hover .sepratedot {
+    color: #fff; }
+.themeStart55 .flatThemeCard .Image div.multipostIcon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: auto; }
+  .themeStart55 .flatThemeCard .Image div.multipostIcon img {
+    height: 20px;
+    width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    border-radius: 0; }
+.themeStart55 .themeStart55 .flatThemeCard .postImg img.postVideoIcon {
+  width: auto;
+  height: 18px;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  left: inherit; }
+.themeStart55 .postNetwork {
+  position: absolute;
+  text-align: center;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  display: none; }
+.themeStart55 .postNetwork i {
+  color: #fff;
+  font-size: 24px; }
+.themeStart55 .flatThemeCard:hover .postNetwork {
+  display: block; }
+.themeStart55 .postCardContent .postedText {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  right: 3%;
+  color: #fff;
+  text-align: center;
+  width: 94%; }
+  .themeStart55 .postCardContent .postedText p, .themeStart55 .postCardContent .postedText h1 {
+    color: inherit; }
+.themeStart55 .postCardContent {
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-left: 20px; }
+  .themeStart55 .postCardContent .postCardCTA {
+    background-color: #4179ff;
+    color: #fff;
+    border-color: #3699ff;
+    padding: 0.6rem 1.25rem;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease; }
+    .themeStart55 .postCardContent .postCardCTA:hover {
+      color: #4179ff;
+      background: #fff; }
+.themeStart55 .flatThemeCard .postImg,
+.themeStart55 .flatThemeCard > div:first-child {
+  overflow: hidden; }
+.themeStart55 .flatThemeCard .postImg {
+  height: 100%; }
+.themeStart55 .flatThemeCard .postImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+.themeStart55 .flatThemeCard:hover .postImg {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07); }
+.themeStart55 .cardPostCTA a {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 160px; }
+@media (max-width: 991px) {
+  .themeStart55 .tb_mo_slider_next_arrow,
+  .themeStart55 .tb_mo_slider_pre_arrow {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    margin-top: -22px; } }
+@media (max-width: 767px) {
+  .themeStart55 .tb_mo_slider_next_arrow,
+  .themeStart55 .tb_mo_slider_pre_arrow {
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    margin-top: -17px; } }
+
+/*# sourceMappingURL=sliderCarousel.css.map */
